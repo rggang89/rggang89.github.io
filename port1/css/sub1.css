@@ -1,0 +1,353 @@
+@charset "utf-8";
+.click-bt{background-color: #5C432F; color: #FCF5EA; padding: 20px 40px; border-radius: 20px;
+            font-size: 26px; display: inline-block; width: 200px; text-align: center;}
+
+/* banner 구역 */
+section.banner{position: relative; width: 100%; margin-top: 84px;}
+
+section.banner .banner-rel{position: absolute; z-index: 10; top: 32%; transform: translateY(-32%); left: 13%;}
+
+section.banner .banner-rel h3{font-size: 70px; text-align: left; padding-bottom: 20px;} 
+
+section.banner .banner-rel .banner-txt p:nth-child(1){font-size: 28px; font-weight: 500; 
+color: #3D211A;}
+section.banner .banner-rel .banner-txt p:nth-child(3){font-size: 18px; font-weight: 300; 
+color: #3D211A;}
+
+section.banner .banner-rel .banner-bt{margin-top: 50px; margin-bottom: 20px;}
+section.banner .banner-rel .banner-bt .click-bt:hover{background-color: #8A6A4B; color: #FCF5EA;}
+
+/*mo-banner 구역 */
+#mo-banner{display: none;}
+section.mo-banner>.banner-bt2{display: none;}
+
+/* make 구역 */
+section.make{background-color: #FCF5EA; padding-bottom: 100px;}
+section.make>h3{padding-bottom: 20px;}
+section.make .flex-box{gap: 20px;}
+section.make .flex-box>div{width: calc((100% - 20px) / 2);
+                            border-radius: 20px; background-color: #EEDDC7;
+                            padding: 20px; text-align: center;}
+section.make .make-box p{color:#3D211A;}
+section.make .make-box p:nth-child(1){font-size: 28px; font-weight: bold; padding-bottom: 20px;}
+section.make .make-box p:nth-child(2){font-size: 18px; font-weight: 500;}
+
+/* how 구역 */
+section.how{background-color: #EEDDC7; padding-bottom: 100px;}
+section.how>h3{padding-bottom: 20px;}
+section.how .flex-box{justify-content: center; align-items: flex-start;}
+section.how .flex-box .step{flex-direction: column; align-items: center;}
+section.how .flex-box .step img{width: 100px; margin: auto; height: auto; padding-bottom: 10px;}
+section.how .flex-box>.fa-angle-right{font-size: 50px; color: #8A6A4B;}
+section.how .flex-box .step-box{background-color: #FCF5EA; border-radius: 20px;
+                                padding: 20px; width: 100%; align-items: flex-start;}
+section.how .flex-box .step-box p{color: #3D211A; text-align: center;}
+section.how .flex-box .step-box p:nth-child(1){font-size: 30px; font-weight: bold; padding-bottom: 20px;}
+section.how .flex-box .step-box p:nth-child(2){font-size: 26px; font-weight: 500; padding-bottom: 10px;}
+section.how .flex-box .step-box p:nth-child(3){font-size: 18px; font-weight: 500;}
+section.how> p{font-size: 24px; font-weight: 600; color:#3D211A; padding-top: 50px;
+                text-align: center;line-height: 200%;}
+
+
+/* now 구역 */
+section.now{background-color: #FCF5EA; padding-bottom: 100px;}
+section>h3{padding-bottom: 20px;}
+section.now>h4{font-size: 30px; padding-top: 20px; color: #3D211A;
+                margin: auto; text-align: center;}
+section.now>h4 span{font-size: 40px;}
+
+section.now>div img{width: 500px; height: auto; margin: auto; padding-top: 20px;}
+
+section.now>.area{justify-content: center; padding-top: 20px; gap: 20px; padding-bottom: 30px;}
+section.now>.area .area-item span.color{display: inline-block; width: 18px; height: 18px;
+                                        border-radius: 2px;}
+section.now>.area .area-item span.seoul{background-color: #5C432F;}
+section.now>.area .area-item span.gyeonggi{background-color: #8A6A4B;}
+section.now>.area .area-item span.busan{background-color: #B89776;}
+section.now>.area .area-item span.daejeon{background-color: #D9C2A3;}
+section.now>.area .area-item span.etc{background-color: #D9C2A3; opacity: 0.5;}
+section.now>.area .area-item .area-text{color: #5C432F; font-size: 28px; font-weight: 500; 
+                                        vertical-align: sub;}
+section.now>.area .area-item .area-percent{font-size: 20px;}
+
+section.now .area-txtbox{gap: 20px;}
+section.now>.flex-box div{width: calc((100% - 20px) / 2);
+                            border-radius: 20px; background-color: #EEDDC7;
+                            padding: 20px; text-align: center;}
+section.now>.flex-box p{color:#3D211A;}
+section.now>.flex-box p:nth-child(1){font-size: 28px; font-weight: bold; padding-bottom: 20px;}
+section.now>.flex-box p:nth-child(2){font-size: 18px; font-weight: 500;}
+
+section.now> p{font-size: 24px; font-weight: 600; color:#3D211A;
+                text-align: center; padding-top: 50px;}
+
+
+/* sec banner 구역 */
+section.mo-under-banner{display: none;}
+section.mo-under-banner>.mo-under-banner-bt2{display: none;}
+
+section.pc-under-banner{position: relative; width: 100%; background-color: #FCF5EA;}
+section.pc-under-banner .pc-under-banner-rel
+    {position: absolute; z-index: 10;
+    top: 30%; transform: translateY(-30%); left: 13%;}
+section.pc-under-banner .pc-under-banner-rel h2{font-size: 130px; text-align: left; 
+                                padding-bottom: 50px; color: #3D211A;} 
+section.pc-under-banner .pc-under-banner-rel h2 span{color: #FCF5EA;}
+section.pc-under-banner .pc-under-banner-rel .pc-under-banner-txt p{font-size: 30px; font-weight: 500; color: #3D211A;}
+section.pc-under-banner .pc-under-banner-rel .pc-under-banner-bt{
+    margin-top: 50px; margin-bottom: 20px;}
+section.pc-under-banner .pc-under-banner-rel .click-bt:hover{background-color: #8A6A4B; color: #FCF5EA;}
+
+
+@media(max-width:1800px){
+/* banner 구역 */
+section.banner .banner-rel{top: 30%; transform: translateY(-30%); left: 10%;}
+section.banner .banner-rel h3{font-size: 60px;}
+}
+
+
+
+@media(max-width:1500px){
+/* banner 구역 */
+section.banner .banner-rel{top: 20%; transform: translateY(-20%); left: 5%;}
+section.banner .banner-rel h3{font-size: 50px;}
+section.banner .banner-rel .banner-txt p:nth-child(1){font-size: 22px;}
+section.banner .banner-rel .banner-bt{padding: 20px 0;}
+section.banner .banner-rel .banner-bt>a{font-size: 24px;}
+
+/* pc-under-banner 구역 */
+section.pc-under-banner .pc-under-banner-rel{top: 20%; transform: translateY(-20%); left: 10%;}
+section.pc-under-banner .pc-under-banner-rel h2{font-size: 100px;}
+section.pc-under-banner .pc-under-banner-rel .pc-under-banner-bt{padding: 20px 0;}
+section.pc-under-banner .pc-under-banner-rel .pc-under-banner-bt>a{font-size: 24px;}
+
+}
+
+
+@media(max-width:1400px){
+/* how 구역 */
+section.how .flex-box{display: block;}
+section.how .flex-box .step-box{width: 100%; margin-bottom: 20px;}
+section.how .flex-box .step:nth-child(7) .step-box{margin-bottom: 0;}
+section.how .flex-box>.fa-angle-right{display: block; transform: rotate(90deg); margin: auto; margin-bottom: 20px;} 
+section.how .flex-box .step-box br{display: none;}
+section.how>p{font-size: 22px; font-weight: 500; color:#3D211A;
+                text-align: center; line-height: 120%;}
+section.how>p span:nth-child(1){display: block;}
+section.how>p span:nth-child(4){display: block;}
+}
+
+
+@media(max-width:1300px){
+/* banner 구역 */
+section.banner .banner-rel{top: 10%; transform: translateY(-10%);}
+section.banner .banner-rel h3{font-size: 40px;}
+section.banner .banner-rel .banner-txt p:nth-child(1){font-size: 20px;}
+section.banner .banner-rel .banner-bt{padding: 10px 0;}
+section.banner .banner-rel .banner-bt>a{font-size: 22px;}
+
+/* pc-under-banner 구역 */
+section.pc-under-banner .pc-under-banner-rel{top: 15%; transform: translateY(-15%); left: 8%;}
+section.pc-under-banner .pc-under-banner-rel h2{font-size: 80px;}
+section.pc-under-banner .pc-under-banner-rel .pc-under-banner-txt p{font-size: 30px;}
+section.pc-under-banner .pc-under-banner-rel .pc-under-banner-bt{padding: 10px 0;}
+section.pc-under-banner .pc-under-banner-rel .pc-under-banner-bt>a{font-size: 22px;}
+
+/* now 구역 */
+section.now>div img{width: 300px; margin: auto; padding-top: 20px;}
+section.now>.area{gap: 10px;}
+section.now>.area .area-item span.color{width: 13px; height: 13px; border-radius: 2px; vertical-align: sub;
+                                        margin-left: 10px;}
+section.now>.area .area-item .area-text{font-size: 16px; font-weight: 500; vertical-align: text-bottom;
+                                        padding-left: 5px; gap: 20px;}                                     
+section.now>.area .area-item .area-percent{font-size: 14px; display: block; padding-left:30%;}
+
+section.now .area-txtbox{margin-top: 20px;}
+section.now>.flex-box div{width: 100%;}
+section.now>.flex-box p:nth-child(1){font-size: 20px; font-weight: bold; padding-bottom: 10px;}
+section.now>.flex-box p:nth-child(2){font-size: 18px; font-weight: 500;}
+
+section.now>p{font-size: 22px; font-weight: 600;}
+
+section.now .area-txtbox{display: block;}
+section.now>.flex-box div{width: 100%; margin-bottom: 20px;}
+section.now>.flex-box div:nth-child(4){margin-bottom: 0px;}
+section.now>.flex-box p{color:#3D211A;}
+section.now>.flex-box p:nth-child(1){font-size: 28px; font-weight: bold; padding-bottom: 20px;}
+section.now>.flex-box p:nth-child(2){font-size: 18px; font-weight: 500;}
+
+}
+
+
+
+@media(max-width:1200px){
+/* banner 구역 */
+section.banner .banner-rel{top: 26px;}
+section.banner .banner-rel h3{font-size: 34px;}
+
+/* pc-under-banner 구역 */
+section.pc-under-banner .pc-under-banner-rel h2{font-size: 60px;}
+section.pc-under-banner .pc-under-banner-rel{top: 12%; transform: translateY(-12%); left: 8%;}
+section.pc-under-banner .pc-under-banner-rel .pc-under-banner-txt p{font-size: 26px;}
+
+}
+
+@media(max-width:1100px){
+#banner{display: none;}
+#mo-banner{display: block;}
+
+/* mo-banner 구역 */
+section.mo-banner{margin-top: 58px; position: relative;}
+section.mo-banner .mo-banner-rel{position: absolute;  top: 25%; transform: translateY(-25%);
+                                left: 30px;}
+section.mo-banner .mo-banner-rel h3{font-size: 36px; padding-bottom: 20px;}
+section.mo-banner .mo-banner-rel .mo-banner-rel-txt
+{font-size: 26px; padding-bottom: 30px;
+line-height: 140%; color: #3D211A;}
+
+/* make 구역 */
+section.make{padding-bottom: 80px;}
+section.make h3{font-size: 40px;}
+section.make>h3 span{display: block;}
+section.make .flex-box{display: block;}
+section.make .flex-box>div{width: 100%; margin-bottom: 20px;}
+section.make .make-box p:nth-child(1){font-size: 24px; padding-bottom: 10px;}
+section.how .flex-box .step-box p:nth-child(2){font-size: 24px;}
+section.how .flex-box .step-box p:nth-child(3){font-size: 20px;}
+section.make .flex-box>div:nth-child(4){margin-bottom: 0;}
+
+
+/* how 구역 */
+section.how{padding-bottom: 80px;}
+section.how>h3{font-size: 40px;}
+section.how .flex-box .step-box p:nth-child(1){font-size: 28px;}
+
+
+/* now 구역 */
+section.now{padding-bottom: 80px;}
+section.now>h3{font-size: 40px;}
+section.now>h4{font-size: 18px; padding-top: 0;}
+section.now>h4 span{font-size: 22px;}
+section.now>.flex-box div{border-radius: 10px;}
+section.now>.flex-box p:nth-child(1){font-size: 24px; padding-bottom: 10px;}
+
+/* mo-under-banner 구역 */
+section.pc-under-banner{display: none;}
+section.mo-under-banner{display: block; position: relative;}
+section.mo-under-banner .mo-under-banner-rel{position: absolute; z-index: 10; top: 50%; 
+                                        transform: translateY(-50%);
+                                        left: 30px;}
+section.mo-under-banner .mo-under-banner-rel h2{font-size: 50px; padding-bottom: 20px; color: #3D211A;
+                                            line-height: 120%;}                                        
+section.mo-under-banner .mo-under-banner-rel h2 span{color: #FCF5EA;}
+
+
+
+}
+
+
+
+@media(max-width:767px){
+h3{font-family: "Noto Sans","Noto Sans KR", sans-serif; padding-top: 30px; padding-bottom: 20px;}
+
+/* mo-banner 구역 */
+section.mo-banner{background-color: #FCF5EA; padding-bottom: 80px;}
+section.mo-banner .mo-banner-rel{position: absolute; top: 40%;
+                                transform: translateY(-40%);
+                                left: 20px;}
+section.mo-banner .mo-banner-rel h3{font-size: 30px;}
+section.mo-banner .mo-banner-rel .mo-banner-rel-txt
+{font-size: 20px; line-height: 120%; color: #3D211A;}
+section.mo-banner .mo-banner-rel .banner-bt{display: none;}
+section.mo-banner>.banner-bt2{display: flex; justify-content: center; margin-top: 20px;}
+section.mo-banner>.banner-bt2 .click-bt{
+    padding: 10px 20px; border-radius: 10px;
+    font-size: 20px; width: 150px;}
+
+/* make 구역 */
+section.make>h3{font-size: 22px; font-weight: bold;}
+section.make>h3 span{display: block;}
+section.make .flex-box>div{border-radius: 10px;}
+section.make .make-box p:nth-child(1){font-size: 20px;}
+section.make .make-box p:nth-child(2){font-size: 16px;}
+section.make .make-box p:nth-child(2)>span{display: block;}
+section.make .make-box p:nth-child(2)>br{display: none;}
+
+
+/* how 구역 */
+section.how>h3{font-size: 22px; font-weight: bold;}
+section.how>p{font-size: 18px; line-height: 120%;}
+section.how>p span{display: block;}
+section.how>p span:nth-child(1){padding-bottom: 10px;}
+section.how>p br{display: none;}
+section.how .flex-box .step-box{border-radius: 10px;}
+section.how .flex-box .step-box br{display: block;}
+section.how .flex-box .step-box p:nth-child(1){font-size: 20px; font-weight: bold; padding-bottom: 10px;}
+section.how .flex-box .step-box p:nth-child(2){font-size: 18px; font-weight: 500; padding-bottom: 10px;}
+section.how .flex-box .step-box p:nth-child(3){font-size: 16px; font-weight: 500;}
+
+
+/* section.how .flex-box .step-box{width:100%;} */
+
+
+/* now 구역 */
+section.now>h3{font-size: 22px; font-weight: bold;}
+section.now>.area{justify-content: left;}
+section.now>.area .area-item span.color{width: 13px; height: 13px; border-radius: 2px; margin-left: 10px;}
+section.now>.area .area-item .area-text{font-size: 16px; font-weight: 500; padding-left: 5px; gap: 20px;}  
+section.now>.area .area-item .area-percent{font-size: 14px; display: block; padding-left:30%;}
+
+
+section.now>.area{gap: 0px; padding-left: 10%;}
+
+section.now .area-txtbox .area-box span{display: block;}
+section.now>.flex-box p:nth-child(1){font-size: 20px; font-weight: bold; padding-bottom: 10px;}
+section.now>.flex-box p:nth-child(2){font-size: 18px; font-weight: 500;}
+section.now>p{font-size: 18px; font-weight: 600;}
+section.now>p span{display: block;}
+
+
+/* mo-under-banner 구역 */
+section.mo-under-banner{padding-bottom: 80px; background-color: #FCF5EA;}
+section.mo-under-banner .mo-under-banner-rel{position: absolute; z-index: 10; top: 30%; 
+                                        transform: translateY(-30%);
+                                        left: 20px;}
+section.mo-under-banner .mo-under-banner-rel h2{font-size: 34px;}
+section.mo-under-banner .mo-under-banner-rel .mo-under-banner-bt{display: none;}
+section.mo-under-banner>.mo-under-banner-bt2{display: flex; justify-content: center; margin-top: 20px;}
+section.mo-under-banner>.mo-under-banner-bt2 .click-bt{
+    padding: 10px 20px; border-radius: 10px;
+    font-size: 20px; width: 150px;}
+
+}
+
+
+@media(max-width:630px){
+/* mo-banner 구역 */
+section.mo-banner .mo-banner-rel{top: 30%;transform: translateY(-30%);}
+section.mo-banner .mo-banner-rel h3{
+    font-size: 24px;}
+section.mo-banner .mo-banner-rel .mo-banner-rel-txt
+{font-size: 18px; line-height: 120%;}
+    
+}
+
+
+
+@media(max-width:500px){
+/* mo-banner 구역 */
+section.mo-banner .mo-banner-rel{top: 20%;transform: translateY(-20%);
+                                    left: 20px;}
+section.mo-banner .mo-banner-rel .mo-banner-rel-txt{font-size: 14px;}
+
+
+/* make 구역 */
+section.make .flex-box>div{padding: 10px;}
+
+
+/* how 구역 */
+section.how .flex-box .step-box{padding: 10px;}
+section.how>p{font-size: 16px;}
+
+
+}

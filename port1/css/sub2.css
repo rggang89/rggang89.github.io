@@ -1,0 +1,466 @@
+@charset "utf-8";
+/* 공통 */
+.click-bt{background-color: #5C432F; color: #FCF5EA; padding: 20px 40px; border-radius: 20px;
+            font-size: 26px; display: inline-block; width: 200px; text-align: center;}
+            
+
+h3{padding-bottom: 50px;}
+
+/* book 구역 */
+section.book{background-color: #EEDDC7; margin-top: 83px; position: fixed; width: 100%;
+            transition: all 0.3s; z-index: 100;}
+section.book h3{color: #3D211A; transition: all 0.3s; padding-top: 20px;
+                font-size: 50px; text-align: left; padding-bottom: 20px;}
+section.book h3.book-active{font-size: 40px; padding: 10px 0 10px 20px;}
+
+/* select 구역 */
+section.select{background-color: #FCF5EA; padding-top: 224px; padding-bottom: 100px};
+
+section.select .container{gap: 20px;}
+section.select .container .enter{width: calc((100% - 20px) /2) ;}
+section.select .container .enter h4{color: #332211; font-size: 30px; font-weight: bold;
+                                    padding-bottom: 10px;}
+section.select .container .enter p{color: #5C432F; font-size: 20px; font-weight: 400;
+                                    padding-bottom: 20px;}
+
+section.select .container .enter div{align-items: center;
+                                    padding: 20px; border: solid 1px #B89776;
+                                    cursor: pointer; border-radius: 20px;
+                                    background-color: #FCF5EA; 
+                                    width: 80%; text-align: left;} 
+
+section.select .container .enter div i{vertical-align: middle; color: #B89776; font-size: 22px;}
+
+section.select .container .enter div span{display: inline-block; vertical-align: middle; color: #5C432F; 
+                                            font-size: 20px; font-weight: 400;}
+
+section.select .container .enter div.left >span:nth-child(1),
+section.select .container .enter div.right >span:nth-child(1)
+{width: 10%;}
+
+section.select .container .enter div.left >span:nth-child(2){width: 78%;}
+
+section.select .container .enter div.left >span:nth-child(3){width: 10%; text-align: right;}
+section.select .container .enter div.right >span:nth-child(3){width: 10%; text-align: center;}
+
+section.select .container .enter div.right >span:nth-child(2),
+section.select .container .enter div.right >span:nth-child(4)
+{width: 37%; text-align: center;}
+
+/* time 구역 */
+section.time{background-color: #FCF5EA; padding-bottom: 100px;}
+section.time h4{color: #332211; font-size: 30px; font-weight: bold;
+                padding-bottom: 20px;}
+section.time .container .time-select{gap: 20px;}
+section.time .container .time-select p{width: calc((100% - 100px) / 6);
+                                        background-color: #FCF5EA; color: #5C432F;
+                                        font-size: 30px; font-weight: 500; text-align: center;
+                                        border-radius: 20px; border: solid 1px #B89776;
+                                        padding: 20px 30px; cursor: pointer;}
+section.time .container .time-select p.on
+{background-color: #8A6A4B; color: #FCF5EA;}
+
+section.time .container .time-select .input-box 
+{width: calc((100% - 100px) / 6);
+    position: relative;}
+
+section.time .container .time-select .input-box p{width: 100%;}
+
+.input-time{display: none; position: absolute; top: 0; left: 0;
+            width: 100%; height: 100%; background-color: #FCF5EA; 
+            border: 1px solid #B89776; border-radius: 20px; color: #332211;
+            font-size: 30px; font-weight: 500; text-align: center;
+            outline: none;}
+
+/* pick 구역 */
+section.pick{background-color: #FCF5EA; padding-bottom: 100px;}
+section.pick .container>h4{color: #332211; font-size: 30px; font-weight: bold;
+                padding-bottom: 10px;}
+section.pick .container>p{color: #5C432F; font-size: 20px; font-weight: 400;
+                padding-bottom: 20px;}
+section.pick .flex-box{gap: 20px;}
+section.pick .flex-box .pick-txt{width: calc((100% - 20px) / 2);}
+section.pick .flex-box .pick-txt p:nth-child(1){
+    background-color: #FCF5EA; color: #332211;
+    font-size: 30px; font-weight: 500; text-align: center;
+    border-radius: 20px; border: solid 1px #B89776;
+    cursor: pointer; padding-top: 20px; padding-bottom: 20px;}
+section.pick .flex-box .pick-txt p:nth-child(1).on
+{background-color: #8A6A4B; color: #FCF5EA;}
+section.pick .flex-box .pick-txt p:nth-child(2){font-size: 20px; color: #5C432F;
+    text-align: center; padding-top: 10px;}
+
+section.pick #sitter1 .more,
+section.pick #sitter2 .more
+{color: #332211; font-size: 26px; font-weight: 500; 
+                            text-align: right; padding-right: 3%; cursor: pointer;}
+section.pick #sitter1 .more:hover,
+section.pick #sitter2 .more:hover
+{color: #8A6A4B;}
+
+section.pick .pick-mo-txt{display: none; font-size: 16px; text-align: center; margin-top: 10px;
+                                    color: #5C432F; padding-top: 10px;}
+
+/* pick 이미지 구역*/
+section.pick #sitter1,
+section.pick #sitter2 {padding-top: 50px; display: none; gap: 0;}
+
+section.pick #sitter1 .container,
+section.pick #sitter2 .container{position: relative;}
+
+section.pick .swiper{max-width: 1300px; cursor: pointer;}
+
+section.pick .swiper-button-next, 
+section.pick .swiper-button-prev
+{top:calc(50% - 50px); margin: 0; margin-left: 10; margin-right: 10px;}
+
+section.pick .swiper-pagination-bullet{width: 14px; height: 14px;}
+.swiper-pagination{position: relative; padding-top: 50px;}
+
+section.pick .swiper .swiper-slide img:nth-child(2){display: none;}
+
+
+:root {--swiper-theme-color: #5C432F; --swiper-navigation-size: 26px;}
+
+
+/* place 구역 */
+section.place{background-color: #FCF5EA; padding-bottom: 100px; position: relative;}
+section.place .container h4{color: #332211; font-size: 30px; font-weight: bold;
+                padding-bottom: 10px;}
+section.place .container p{color: #5C432F; font-size: 20px; font-weight: 400;
+                padding-bottom: 20px;}
+
+section.place .flex-box{gap: 20px;}
+section.place .flex-box .place-txt{width: calc((100% - 20px) / 2);}
+section.place .flex-box .place-txt p:nth-child(1){
+    background-color: #FCF5EA; color: #332211;
+    font-size: 30px; font-weight: 500; text-align: center;
+    border-radius: 20px; border: solid 1px #B89776;
+    cursor: pointer; padding-top: 20px; padding-bottom: 20px;}
+section.place .flex-box .place-txt p:nth-child(1).on
+{background-color: #8A6A4B; color: #FCF5EA;}
+section.place .flex-box .place-txt p:nth-child(2){font-size: 20px; color: #5C432F;
+    text-align: center; padding-top: 10px;}
+
+section.place .place-sub-txt{display: none; font-size: 16px; text-align: center;
+                            color: #5C432F; padding-top: 10px;}
+
+
+/* info 구역 */
+section.info{background-color: #FCF5EA; padding-bottom: 100px}
+
+section.info .container>h4{color: #332211; font-size: 30px; font-weight: bold;
+                padding-bottom: 10px;}
+section.info .container>p{color: #5C432F; font-size: 20px; font-weight: 400;
+                padding-bottom: 20px;}
+
+section.info .info-card{background-color: #FCF5EA; color: #332211; position: relative;
+                        border-radius: 20px; border: solid 1px #B89776;
+                        padding: 20px;}
+
+section.info .info-card .info-photo{width: 10%; position: absolute;}
+section.info .info-card .info-photo img{width: 100%;}
+
+section.info .info-card .info-pet .info-name,
+section.info .info-card .info-pet .info-intro,
+section.info .info-card .info-pet .info-details  {padding-left: 12%}
+
+section.info .info-card .fa-angle-right{width: 5%; cursor: pointer; text-align: right;
+    position: absolute; top: 50%; transform: translateY(-50%); right: 20px;
+    font-size: 24px; color: #B89776}
+
+section.info .info-card .info-pet .info-name{font-size: 40px; font-weight: bold; padding-bottom: 10px;}
+section.info .info-card .info-pet .info-name span{font-size: 30px; font-weight: 400;}
+section.info .info-card .info-pet .info-intro{font-size: 32px; font-weight: 500; padding-bottom: 20px;}
+section.info .info-card .info-pet .info-details .flex-box{display: flex; align-items: center;
+    padding-bottom: 10px;}
+section.info .info-card .info-pet .info-details .flex-box:nth-child(3){padding-bottom: 0;}
+section.info .info-card .info-pet .info-details .label
+{font-size: 28px; font-weight: 500; padding-right: 20px;}
+section.info .info-card .info-pet .info-details .desc
+{font-size: 24px; font-weight: 400;}
+
+
+/* request 구역 */
+section.request{background-color: #FCF5EA; padding-bottom: 200px}
+section.request .container>h4{color: #332211; font-size: 30px; font-weight: bold;
+                padding-bottom: 10px;}
+section.request .container>p{color: #5C432F; font-size: 20px; font-weight: 400;
+                padding-bottom: 20px;}
+section.request .container .request-box{color: #332211; font-size: 24px;
+    padding: 20px; border-radius: 20px; border: solid 1px #B89776;}
+section.request .click-bt{display: block; margin: auto; margin-top: 50px;}
+section.request .click-bt:hover{background-color: #8A6A4B; color: #FCF5EA}
+
+
+
+@media(max-width:1500px){
+/* pick 이미지 구역*/
+section.pick .pick-img-whole{max-width: 1200px;}
+section.pick .swiper{max-width: 1100px;}
+
+
+
+
+}
+
+
+
+@media(max-width:1300px){
+/* slect 구역 */
+section.select .container .enter div{width: 98%;}
+section.select .container .enter div.left >span:nth-child(1),
+section.select .container .enter div.right >span:nth-child(1)
+{width: 6%;}
+
+section.select .container .enter div.left >span:nth-child(2){width: 72%;}
+section.select .container .enter div.left >span:nth-child(3){width: 20%;}
+
+section.select .container .enter div.right >span:nth-child(3){width: 6%;}
+
+section.select .container .enter div.right >span:nth-child(2),
+section.select .container .enter div.right >span:nth-child(4)
+{width: 42%;}
+
+
+
+
+
+
+}
+
+@media(max-width:1200px){
+/* pick 이미지 구역*/
+section.pick .pick-img-whole{max-width: 1100px;}
+section.pick .swiper{max-width: 1000px;}
+
+
+
+/* time 구역 */
+section.time .container .time-select p{padding: 20px;}
+        
+
+}
+
+
+
+@media(max-width:1100px){
+/* book 구역 */
+section.book{margin-top: 58px;}
+section.book h3{font-size: 30px;
+                padding-top: 15x; padding-bottom: 15px;}
+section.book h3.book-active{font-size: 24px; padding-top: 5px; padding-bottom: 5px;}
+
+
+/* slect 구역 */
+section.select{padding-top: 160px; padding-bottom: 80px;}
+section.select .container{gap: 0px;}
+section.select .container .enter{width: 100%;}
+section.select .container .enter:nth-child(1){padding-bottom: 80px;}
+
+section.select .container .enter h4{font-size: 26px;}
+section.select .container .enter p{font-size: 18px;}
+
+section.select .container .enter div.left >span:nth-child(1),
+section.select .container .enter div.right >span:nth-child(1)
+{width: 5%;}
+
+section.select .container .enter div.left >span:nth-child(2){width: 73%;}
+section.select .container .enter div.left >span:nth-child(3){width: 20%;}
+
+section.select .container .enter div.right >span:nth-child(3){width: 5%;}
+
+section.select .container .enter div.right >span:nth-child(2),
+section.select .container .enter div.right >span:nth-child(4)
+{width: 44%;}
+
+
+/* time 구역 */
+section.time{padding-bottom: 80px;}
+section.time h4{font-size: 26px;}
+section.time .container .time-select p,
+section.time .container .time-select .input-box
+{width: calc((100% - 40px) / 3);}
+
+
+/* pick 구역 */
+section.pick{padding-bottom: 80px;}
+section.pick .container>h4{font-size: 26px;}
+section.pick .container>p{font-size: 18px;}
+section.pick .flex-box .pick-txt p:nth-child(2){font-size: 18px;}
+
+/* pick 이미지 구역*/
+section.pick #sitter1 .more,
+section.pick #sitter2 .more{font-size: 20px;}
+section.pick .swiper-button-next, 
+section.pick .swiper-button-prev
+{display: none;}
+
+
+/* place 구역 */
+section.place{padding-bottom: 80px;}
+section.place .container h4{font-size: 26px;}
+section.place .container p{font-size: 18px;}
+section.place .flex-box .place-txt p:nth-child(2){font-size: 18px;}
+
+/* info 구역 */
+section.info{padding-bottom: 80px;}
+section.info .container>h4{font-size: 26px;}
+section.info .container>p{font-size: 18px;}
+section.info .info-card .fa-angle-right{font-size: 20px;}
+section.info .info-card .info-pet .info-name{font-size: 30px;}
+section.info .info-card .info-pet .info-name span{font-size: 20px;}
+section.info .info-card .info-pet .info-intro{font-size: 20px;}
+section.info .info-card .info-pet .info-details .label{font-size: 20px;}
+section.info .info-card .info-pet .info-details .desc{font-size: 18px;}
+
+
+/* request 구역 */
+section.request{padding-bottom: 160px}
+section.request .container>h4{font-size: 26px;}
+section.request .container>p{font-size: 18px;}
+section.request .container .request-box{font-size: 22px;}
+
+}
+
+@media(max-width:767px){
+h3{font-family: "Noto Sans","Noto Sans KR", sans-serif; padding-top: 30px; padding-bottom: 20px; font-weight: bold;}
+
+/* book 구역 */
+section.book h3{font-size: 22px; padding-top: 10px; padding-bottom: 10px;}
+section.book h3.book-active{font-size: 20px; padding-top: 5px; padding-bottom: 5px;}
+
+/* slect 구역 */
+section.select{padding-top: 140px;}
+section.select .container .enter h4{font-size: 20px;}
+section.select .container .enter p{font-size: 16px;}
+section.select .container .enter div{border-radius: 10px;}
+section.select .container .enter div i{font-size: 20px;}
+section.select .container .enter div span{font-size: 16px;}
+
+section.select .container .enter div{width: 96%;}
+
+section.select .container .enter div.left >span:nth-child(1),
+section.select .container .enter div.right >span:nth-child(1)
+{width: 8%;}
+
+section.select .container .enter div.left >span:nth-child(2){width: 68%;}
+
+section.select .container .enter div.left >span:nth-child(3){width: 20%;}
+
+section.select .container .enter div.right >span:nth-child(3){width: 8%;}
+
+section.select .container .enter div.right >span:nth-child(2),
+section.select .container .enter div.right >span:nth-child(4)
+{width: 40%;}
+
+
+/* time 구역 */
+section.time h4{font-size: 20px;}
+section.time .container .time-select p{border-radius: 10px; font-size: 16px;}
+section.time .container .time-select .input-box, .input-time{font-size: 16px;}
+.input-time{border-radius: 10px}
+
+
+/* pick 구역 */
+section.pick .container>h4{font-size: 20px;}
+section.pick .container>p{font-size: 16px;}
+
+section.pick .flex-box .pick-txt p:nth-child(1){border-radius: 10px; font-size: 16px;}
+section.pick .flex-box .pick-txt p:nth-child(2){display: none;}
+
+section.pick .pick-img,
+section.pick .pick-img2{padding-top: 10px;}
+
+section.pick .swiper .swiper-slide img:nth-child(1){display: none;}
+section.pick .swiper .swiper-slide img:nth-child(2){display: block;}
+section.pick .click-bt{display: block;  margin: auto; margin-top: 20px;
+                            padding: 10px 20px; border-radius: 10px;
+                            font-size: 20px; width: 150px;}
+
+section.pick #sitter1,
+section.pick #sitter2 {padding-top: 10px;}
+
+section.pick #sitter1 .more,
+section.pick #sitter2 .more{font-size: 18px;}
+
+
+
+/* place 구역 */
+section.place .container h4{font-size: 20px;}
+section.place .container p{font-size: 16px;}
+section.place .flex-box .place-txt p:nth-child(1){border-radius: 10px; font-size: 16px;}
+section.place .flex-box .place-txt p:nth-child(2){display: none;}
+
+/* info 구역 */
+section.info .container>h4{font-size: 20px;}
+section.info .container>p{font-size: 16px;}
+section.info .info-card .fa-angle-right{font-size: 18px;}
+section.info .info-card .info-photo{width: 20%;}
+section.info .info-card .info-pet .info-name{font-size: 26px;}
+section.info .info-card .info-pet .info-name span{font-size: 18px;}
+section.info .info-card .info-pet .info-intro{font-size: 18px;}
+section.info .info-card .info-pet .info-intro span{display: block;}
+section.info .info-card .info-pet .info-details .label{font-size: 18px;}
+section.info .info-card .info-pet .info-details .desc{font-size: 16px;}
+
+section.info .info-card .info-pet .info-name{padding-left: 28%; padding-top: 5%}
+section.info .info-card .info-pet .info-intro,
+section.info .info-card .info-pet .info-details{padding-left: 0}
+
+section.info .info-card .info-pet .info-intro{padding-top: 10%}
+
+
+/* request 구역 */
+section.request .container>h4{font-size: 20px;}
+section.request .container>p{font-size: 16px;}
+section.request .container .request-box{font-size: 16px;}
+section.request .click-bt{margin-top: 30px; padding: 10px 20px; 
+    border-radius: 10px; font-size: 20px; width: 150px;}
+
+}
+
+
+@media(max-width:500px){
+/* book 구역 */
+section.book h3{font-size: 20px;}
+section.book h3.book-active{font-size: 18px;}
+
+/* slect 구역 */
+section.select{padding-top: 137px;}
+section.select .container .enter div{width: 90%; padding: 10px;}
+
+section.select .container .enter div.left >span:nth-child(1),
+section.select .container .enter div.right >span:nth-child(1)
+{display: none;}
+
+section.select .container .enter div.left >span:nth-child(2){width: 100%; text-align: left;}
+
+section.select .container .enter div.left >span:nth-child(3){display: none;}
+
+section.select .container .enter div.right >span:nth-child(3){width: 10%;}
+
+section.select .container .enter div.right >span:nth-child(2),
+section.select .container .enter div.right >span:nth-child(4)
+{width: 42%;}
+
+/* time 구역 */
+section.time .container .time-select p{padding: 10px;}
+
+/* pick 구역 */
+section.pick .flex-box .pick-txt p:nth-child(1){padding: 10px;}
+section.pick #sitter1 .more,
+section.pick #sitter2 .more{font-size: 16px;}
+
+/* place 구역 */
+section.place .flex-box .place-txt p:nth-child(1){padding: 10px;}
+
+/* info구역 */
+
+section.info .info-card .fa-angle-right{font-size: 20px;}
+section.info .info-card .info-pet .info-name{font-size: 24px;}
+section.info .info-card .info-pet .info-name span{font-size: 16px;}
+section.info .info-card .info-pet .info-details .flex-box{display: block;}
+section.info .info-card .info-pet .info-details .desc{font-size: 16px; }
+section.info .info-card .info-pet .info-details .desc>span{width: 100%;}
+}

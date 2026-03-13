@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+/* 공통 버튼*/
+.click-bt{background-color: #5C432F; color: #FCF5EA; padding: 20px 40px; border-radius: 20px;
+        font-size: 26px; display: inline-block; width: 200px; text-align: center;}
+h3{padding-bottom: 50px;}
+
+/* banner3 구역 */
+section.banner3{position: relative; width: 100%; margin-top: 84px;}
+
+section.banner3 .banner3-rel{position: absolute; z-index: 10;
+                                top: 32%; transform: translateY(-32%); left: 13%;} 
+
+section.banner3 .banner3-rel h3{font-size: 70px; text-align: left; padding-bottom: 20px;} 
+
+section.banner3 .banner3-rel .banner3-txt p:nth-child(1){font-size: 28px; font-weight: 500; 
+color: #3D211A;}
+section.banner3 .banner3-rel .banner3-txt p:nth-child(3){font-size: 18px; font-weight: 300; 
+color: #3D211A;}
+
+/* section.banner3 .banner3-rel .banner3-txt p{font-size: 30px; font-weight: 500; color: #3D211A;} */
+section.banner3 .banner3-rel .banner3-bt{margin-top: 50px; margin-bottom: 20px;}
+section.banner3 .banner3-rel .banner3-bt .click-bt:hover{background-color: #8A6A4B; color: #FCF5EA;}
+
+/*mo-banner3 구역 */
+#mo-banner3{display: none;}
+section.mo-banner3>.banner3-bt2{display: none;}
+
+
+/* ex-sitter 구역 */
+section.ex-sitters>p{font-size: 30px; text-align: center; color: #3D211A;
+                        font-weight: bold; padding-bottom: 20px;}
+section.ex-sitters>p span{font-size: 40px;}
+
+section.ex-sitters{background-color: #FCF5EA; position: relative; padding-bottom: 100px;}
+
+section.ex-sitters .container{position: relative;}
+
+section.ex-sitters .swiper{max-width: 1300px; cursor: pointer;}
+
+.swiper-pagination-bullet{width: 14px; height: 14px;}
+
+.swiper-pagination{position: relative; padding-top: 50px;}
+
+section.ex-sitters .swiper-button-next{top: calc(50% - 30px);}
+section.ex-sitters .swiper-button-prev{top: calc(50% - 30px);}
+
+:root {--swiper-theme-color: #5C432F; --swiper-navigation-size: 26px;}
+
+section.ex-sitters .swiper .swiper-slide img:nth-child(2){display: none;}
+
+section.ex-sitters .more{color: #332211; font-size: 20px; font-weight: 500; 
+                    text-align: right; padding-right: 3%; cursor: pointer;}
+
+section.ex-sitters .more:hover
+{color: #8A6A4B;}
+
+
+
+/* steps 구역 */
+section.steps{background-color: #EEDDC7; padding-bottom: 100px;}
+
+section.steps .flex-box{gap: 20px;}
+section.steps .steps-box{width: calc((100% - 20px) / 2);}
+
+section.steps .steps-box .steps-title{font-size: 28px; font-weight: bold; text-align: center;
+                                        background-color: #D9C2A3; color: #3D211A; padding: 20px 0;
+                                        border-radius: 20px 20px 0 0;}
+section.steps .steps-box .steps-explain{font-size: 22px; font-weight: 500; text-align: center;
+                                        background-color: #FCF5EA; color: #3D211A; padding: 20px 0;
+                                        border-radius: 0 0 20px 20px;}
+section.steps .steps-box .steps-explain p span{font-size: 24px; font-weight: 600;}
+section.steps .steps-box .steps-explain p{padding-bottom: 10px;}
+
+.m-br{display: none;}
+
+
+/* service 구역 */
+section.service{background-color: #FCF5EA; padding-bottom: 100px;}
+section.service .flex-box{gap: 20px;}
+section.service .service-box{width: calc((100% - 20px) / 2);background-color: #EEDDC7; 
+                            font-size: 28px; font-weight: bold; padding: 20px 0;
+                            color: #3D211A; border-radius: 20px; text-align: center;}
+section.service>p{color: #3D211A; font-size: 30px; text-align: center; font-weight: 600;}
+section.service>p:nth-child(3){padding-top: 50px; padding-bottom: 20px;}
+
+
+/* sec banner 구역 */
+section.mo-sec-banner{display: none;}
+section.mo-sec-banner>.mo-sec-banner-bt2{display: none;}
+
+section.pc-sec-banner{position: relative; width: 100%; background-color: #FCF5EA;}
+section.pc-sec-banner .pc-sec-banner-rel
+    {position: absolute; z-index: 10;
+    top: 30%; transform: translateY(-30%); left: 13%;}
+section.pc-sec-banner .pc-sec-banner-rel h2{font-size: 130px; text-align: left; 
+                                padding-bottom: 50px; color: #3D211A;} 
+section.pc-sec-banner .pc-sec-banner-rel h2 span{color: #FCF5EA;}
+section.pc-sec-banner .pc-sec-banner-rel .pc-sec-banner-txt p{font-size: 30px; font-weight: 500; color: #3D211A;}
+section.pc-sec-banner .pc-sec-banner-rel .pc-sec-banner-bt{
+    margin-top: 50px; margin-bottom: 20px;}
+section.pc-sec-banner .pc-sec-banner-rel .click-bt:hover{background-color: #8A6A4B; color: #FCF5EA;}
+
+
+
+@media(max-width:1800px){
+
+/* banner 구역 */
+section.banner3 .banner3-rel{top: 30%; transform: translateY(-30%); left: 10%;}
+section.banner3 .banner3-rel h3{font-size: 60px;}
+}
+
+
+@media(max-width:1500px){
+
+/* banner 구역     */
+section.banner3 .banner3-rel{top: 20%; transform: translateY(-20%); left: 5%;}
+section.banner3 .banner3-rel h3{font-size: 50px;}
+section.banner3 .banner3-rel .banner3-txt p:nth-child(1){font-size: 22px;}
+section.banner3 .banner3-rel .banner3-bt{padding: 20px 0;}
+section.banner3 .banner3-rel .banner3-bt>a{font-size: 24px;}
+
+
+/* ex-sitters 구역 */
+section.ex-sitters .whole-box{max-width: 1200px;}
+section.ex-sitters .swiper{max-width: 1100px;}
+
+
+/* steps 구역 */
+section.steps .steps-box .steps-title{font-size: 26px;}
+section.steps .steps-box .steps-explain{font-size: 20px;}
+section.steps .steps-box .steps-explain p span{font-size: 22px;}
+
+
+/* pc-sec-banner 구역 */
+section.pc-sec-banner .pc-sec-banner-rel{top: 20%; transform: translateY(-20%); left: 10%;}
+section.pc-sec-banner .pc-sec-banner-rel h2{font-size: 100px;}
+section.pc-sec-banner .pc-sec-banner-rel .pc-sec-banner-bt{padding: 20px 0;}
+section.pc-sec-banner .pc-sec-banner-rel .pc-sec-banner-bt>a{font-size: 24px;}
+}
+
+
+@media(max-width:1300px){
+/* banner 구역     */
+section.banner3 .banner3-rel{top: 10%; transform: translateY(-10%); left: 5%;}
+section.banner3 .banner3-rel h3{font-size: 40px;}
+section.banner3 .banner3-rel .banner3-txt p:nth-child(1){font-size: 20px;}
+section.banner3 .banner3-rel .banner3-bt{padding: 10px 0;}
+section.banner3 .banner3-rel .banner3-bt>a{font-size: 22px;}
+
+
+/* steps 구역 */
+section.steps .steps-box .steps-title{font-size: 24px;}
+section.steps .steps-box .steps-explain{font-size: 18px;}
+section.steps .steps-box .steps-explain p span{font-size: 20px;}
+
+
+section.service>p{font-size: 26px;}
+
+
+/* pc-sec-banner 구역 */
+section.pc-sec-banner .pc-sec-banner-rel{top: 15%; transform: translateY(-15%); left: 8%;}
+section.pc-sec-banner .pc-sec-banner-rel h2{font-size: 80px;}
+section.pc-sec-banner .pc-sec-banner-rel .pc-sec-banner-txt p{font-size: 30px;}
+section.pc-sec-banner .pc-sec-banner-rel .pc-sec-banner-bt{padding: 10px 0;}
+section.pc-sec-banner .pc-sec-banner-rel .pc-sec-banner-bt>a{font-size: 22px;}
+}
+
+
+@media(max-width:1200px){
+
+/* banner 구역     */
+section.banner3 .banner3-rel{left: 5%; top: 26px;}
+section.banner3 .banner3-rel h3{font-size: 34px;}
+
+
+/* ex-sitters 구역 */
+section.ex-sitters .whole-box{max-width: 1100px;}
+section.ex-sitters .swiper{max-width: 1000px;}
+
+/* steps 구역 */
+section.steps .flex-box{display: block;}
+section.steps .steps-box{width: 100%; padding-bottom: 20px;}
+section.steps .steps-box:nth-child(4){padding-bottom: 0;}
+
+
+/* pc-sec-banner 구역 */
+section.pc-sec-banner .pc-sec-banner-rel h2{font-size: 60px;}
+section.pc-sec-banner .pc-sec-banner-rel{top: 12%; transform: translateY(-12%); left: 8%;}
+section.pc-sec-banner .pc-sec-banner-rel .pc-sec-banner-txt p{font-size: 26px;}
+}
+
+
+@media(max-width:1100px){
+/* 공통 구역 */
+#banner3{display: none;}
+#mo-banner3{display: block;}
+
+/* mo-banner3 구역 */
+section.mo-banner3{margin-top: 58px; position: relative;}
+section.mo-banner3 .mo-banner3-rel{position: absolute; top: 25%; transform: translateY(-25%);
+                                    left: 30px;} 
+section.mo-banner3 .mo-banner3-rel h3{font-size: 40px; padding-bottom: 20px;}
+section.mo-banner3 .mo-banner3-rel .mo-banner3-rel-txt{font-size: 26px; padding-bottom: 30px;
+line-height: 140%; color: #3D211A;}
+
+/* sitters 구역 */
+section.ex-sitters>h3{font-size: 40px;}
+section.ex-sitters>p{font-size: 26px;}
+section.ex-sitters>p span{font-size: 36px;}
+section.ex-sitters .swiper-button-next, section.ex-sitters .swiper-button-prev{display: none;}
+section.ex-sitters .more{font-size: 20px;}
+
+/* steps 구역 */
+section.steps{padding-bottom: 80px;}
+section.steps>h3{font-size: 40px;}
+
+
+/* service 구역 */
+section.service{padding-bottom: 80px;}
+section.service>h3{font-size: 40px;}
+section.service .flex-box{display: block;}
+section.service .service-box{font-size: 24px; width: 100%;margin-bottom: 20px;}
+section.service .service-box:nth-child(6){margin-bottom: 0;}
+section.service>p{font-size: 22px;}
+section.service>p:nth-child(3){padding-top: 50px; padding-bottom: 20px;}
+
+/* mo-sec-banner 구역 */
+section.pc-sec-banner{display: none;}
+section.mo-sec-banner>.mo-sec-banner-bt2{display: none;}
+section.mo-sec-banner{display: block; position: relative;}
+section.mo-sec-banner .mo-sec-banner-rel{position: absolute; z-index: 10; top: 50%; 
+                                        transform: translateY(-50%);
+                                        left: 30px;}
+section.mo-sec-banner .mo-sec-banner-rel h2{font-size: 50px; padding-bottom: 20px; color: #3D211A;
+                                            line-height: 120%;}                                        
+section.mo-sec-banner .mo-sec-banner-rel h2 span{color: #FCF5EA;}
+}
+
+
+@media(max-width:767px){
+h3{padding-top: 30px; padding-bottom: 20px;}
+
+
+/* mo-banner3 구역 */
+section.mo-banner3{background-color: #FCF5EA; padding-bottom: 80px;}
+section.mo-banner3 .mo-banner3-rel{position: absolute; top: 40%;
+                                    transform: translateY(-40%);
+                                    left: 20px;}
+section.mo-banner3 .mo-banner3-rel h3{ font-weight: 100;
+    font-size: 30px;}
+section.mo-banner3 .mo-banner3-rel .mo-banner3-rel-txt
+{font-size: 20px; line-height: 120%; color: #3D211A;}
+section.mo-banner3 .mo-banner3-rel .banner3-bt{display: none;}
+section.mo-banner3>.banner3-bt2{display: flex; justify-content: center; margin-top: 20px;}
+section.mo-banner3>.banner3-bt2 .click-bt{
+    padding: 10px 20px; border-radius: 10px;
+    font-size: 20px; width: 150px;}
+
+
+/* ex-sitters 구역 */
+section.ex-sitters>h3{font-size: 22px; font-weight: bold;}
+section.ex-sitters>p{font-size: 16px;}
+section.ex-sitters>p span{font-size: 20px;}
+section.ex-sitters .swiper .swiper-slide img:nth-child(1){display: none;}
+section.ex-sitters .swiper .swiper-slide img:nth-child(2){display: block;}
+section.ex-sitters .click-bt{display: block;  margin: auto; margin-top: 20px;
+                            padding: 10px 20px; border-radius: 10px;
+                            font-size: 20px; width: 150px;}
+section.ex-sitters .more{font-size: 18px;}
+
+
+/* steps 구역 */
+section.steps>h3{font-size: 22px; font-weight: bold;}
+section.steps .steps-box .steps-title{font-size: 24px; border-radius: 10px 10px 0 0;}
+section.steps .steps-box .steps-explain{font-size: 16px; border-radius: 0 0 10px 10px;}
+section.steps .steps-box .steps-explain p span{font-size: 18px;}
+
+/* service 구역 */
+section.service>h3{font-size: 22px; font-weight: bold;}
+section.service>p{font-size: 18px;}
+section.service>p span{display: block;}
+section.service .service-box{font-size: 18px; border-radius: 10px;}
+
+
+
+
+/* mo-sec-banner 구역 */
+section.mo-sec-banner{padding-bottom: 80px; background-color: #FCF5EA;}
+section.mo-sec-banner .mo-sec-banner-rel{position: absolute; z-index: 10; top: 30%; 
+                                        transform: translateY(-30%);
+                                        left: 20px;}
+section.mo-sec-banner .mo-sec-banner-rel h2{font-size: 34px;}
+section.mo-sec-banner .mo-sec-banner-rel .mo-sec-banner-bt{display: none;}
+section.mo-sec-banner>.mo-sec-banner-bt2{display: flex; justify-content: center; margin-top: 20px;}
+section.mo-sec-banner>.mo-sec-banner-bt2 .click-bt{
+    padding: 10px 20px; border-radius: 10px;
+    font-size: 20px; width: 150px;}
+}
+
+
+@media(max-width:630px){
+/* banner 구역 */
+section.mo-banner3 .mo-banner3-rel{top: 30%;transform: translateY(-30%);}
+section.mo-banner3 .mo-banner3-rel h3{font-weight: 100;
+    font-size: 26px;}
+section.mo-banner3 .mo-banner3-rel .mo-banner3-rel-txt
+{font-size: 18px; line-height: 120%;}
+
+
+/* steps 구역 */
+section.steps .steps-box .steps-title{font-size: 24px; border-radius: 10px 10px 0 0;}
+section.steps .steps-box .steps-explain{font-size: 16px; border-radius: 0 0 10px 10px;}
+section.steps .steps-box .steps-explain p span{font-size: 18px;}
+
+
+/* service 구역 */
+section.service>p span{display: block;}
+}
+
+
+
+@media(max-width:500px){
+/* banner 구역 */
+section.mo-banner3 .mo-banner3-rel{top: 15%;transform: translateY(-15%);
+                                    left: 25px;}
+section.mo-banner3 .mo-banner3-rel h3{font-weight: bold; font-size: 24px;}
+section.mo-banner3 .mo-banner3-rel .mo-banner3-rel-txt{font-size: 14px;}
+
+/* ex-sitters 구역 */
+section.ex-sitters .more{font-size: 26px;}
+
+/* steps 구역 */
+section.steps>h3 span{display: block;}
+section.steps .steps-box .steps-title{font-size: 20px;}
+
+
+.pc-br{display: none;}
+.m-br{display: block;}
+
+
+/* service 구역 */
+section.service>h3 span{display: block;}
+}

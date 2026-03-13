@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+h2{font-family: "Agbalumo", sans-serif;}
+h3{font-family: "Noto Sans", sans-serif; padding-top: 100px; color: #3D211A; 
+    font-size: 50px; font-weight: bold; text-align: center;}
+body{font-family: "Noto Sans","Noto Sans KR", sans-serif;}
+
+*{padding: 0; margin: 0; box-sizing: border-box; text-decoration: none; list-style: none;}
+img{display: block; width: 100%;}
+a{color: #3D211A;}
+
+.container{max-width: 1400px; margin: auto; padding: 0 20px;}
+.flex-box{display: flex; flex-wrap: wrap;}
+
+.pop{background-color: #5C432F; width: 60px; height: 60px; line-height: 50px;
+            border-radius: 50%; position: fixed; z-index: 3000; right: 20px; bottom: 20px;
+            text-align: center; display: none;}
+.pop a{font-size: 50px; color: #FCF5EA;}
+
+/* 헤더구역 */
+#mo-header{display: none;}
+header{background-color: #FCF5EA; width: 100%; position: fixed; z-index: 2000;
+        left: 0; top: 0; padding: 30px 0;}
+header nav{justify-content: space-between; align-items: center;}
+header nav ul li{display:inline-block; padding: 0 30px; font-weight: 500;}
+header nav ul li a:hover{color: #8A6A4B;}
+#bt{display: none; cursor: pointer;}
+header .sub-menu{display: none;}
+header .sub-menu>.apply{display: none;}
+header .sub-menu>.apply a{font-size: 20px; font-weight: 400; background-color: #8A6A4B;
+                            padding-left: 30px;}
+
+/* 푸터 구역 */
+footer{background-color: #FCF5EA; color: #3D211A; padding: 100px 0; font-size: 14px;
+        border-top: solid 1px #D9C2A3;}
+footer a{color: #3D211A;}
+footer .container{justify-content: space-between; align-items: flex-start;}
+footer .container .footer-left{width: 50%;}
+footer .container .footer-left p{padding-bottom: 20px;}
+footer .container .footer-left p:nth-child(6){padding-bottom: 0px;}
+
+footer .container .footer-right{width: 50%; justify-content: space-between; align-items: flex-start;}
+footer ul{padding-top: 20px;}
+footer ul li{padding-bottom: 10px;}
+footer ul li a:hover{color: #8A6A4B;}
+
+@media(max-width:1100px){
+
+#pc-header{display: none;}
+#mo-header {display: block;}
+header{  padding: 20px 0;}
+#bt{display: block; color: #3D211A; position: absolute; z-index: 1000; right: 16px; top: 10px; font-size: 28px;}
+#mo-header .logo img{padding-left: 16px; width: auto;}
+
+#mo-header .sub-menu{padding: 16px 0;
+                    background-color: #5C432F; width: 70%; height: 100vh;
+                    top: 0; right: -800px; position: fixed; z-index: 2100;
+                    transition: right 0.3s; display: block;
+}
+
+#mo-header .sub-menu ul{margin-top: 50px;}
+#mo-header .sub-menu .fa-circle-xmark{position: absolute; top: 11px; right: 16px; color: #FCF5EA;
+                         font-size: 30px; cursor: pointer;}
+#mo-header .sub-menu li{ padding: 0 20px; }                        
+#mo-header .sub-menu li a{display: block; position: relative; 
+                        font-size: 22px; font-weight: 500; color: #FCF5EA;
+                    border-bottom: solid 1px #FCF5EA; padding: 20px 0;}
+header .sub-menu .fa-angle-right{position: absolute; right: 16px; padding-top: 8px; font-size: 18px;}
+.pop{display: block;}
+
+#mo-header .sub-menu li.apply{display: none; background-color: #8A6A4B;  }
+#mo-header .sub-menu li.apply a{ padding-left: 20px;font-size: 20px;border-bottom: 0;}
+
+#mo-header .sub-menu li a.bottom-line, #mo-header .sub-menu li.apply a.bottom-line{border-bottom:0;}
+.rotate{transform: rotate(90deg);}
+
+.pop.active{background-color: #FCF5EA; transition: all 1s;}
+.pop a.active2{color: #5C432F; transition: all 1s;}
+
+
+/* 푸터 구역 */
+footer{padding: 30px 0 30px 30px;}
+footer .container.flex-box{flex-direction: column;}
+footer .container .footer-left{width: 100%; margin-bottom: 20px;}
+footer .container .footer-left p{display: flex; flex-direction: column; padding-bottom: 20px;}
+footer .container .footer-left p span {display: none;}
+footer .container .footer-left p strong {margin-bottom: 10px;}
+
+footer .container .footer-right{width: 100%; gap: 40px 0; margin-top: 50px;}
+footer .container .footer-right .footer-right-txt{width: 50%;} 
+footer ul{padding-top: 15px;}
+}
+
+@media(max-width:767px){
+
+}
