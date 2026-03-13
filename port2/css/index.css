@@ -1,0 +1,344 @@
+@charset "utf-8";
+/* *{border: solid 1px red;} */
+
+section{margin-bottom: 200px;}
+
+/* banner 구역 */
+#mo-banner{display: none;}
+section.banner{margin-top: 81px; margin-bottom: 100px;}
+section.banner img{margin-right: 0; margin-left: auto; width: 27%;}
+section.banner .bt-green{padding: 20px 30px;}
+section.banner .container{position: relative;}
+section.banner .banner-txt{position: absolute; top: 50%; transform: translateY(-50%); left: 20px;}
+
+/* flag 구역 */
+section.flag .swiper{display: none;}
+section.flag .flag-box{gap: 30px;}
+section.flag .flag-box>div{width: calc((100% - 300px) / 11); text-align: center;}
+section.flag .flag-box>div img{border-radius: 50%; border: solid 1px #9CA3AF;}
+section.flag .flag-box>div .m2{padding-top: 10px;}
+section.flag>.m1{text-align: center;}
+
+
+/* find 구역 */
+section.find>.step-box{gap: 150px;}
+section.find>.step-box div{width: calc((100% - 300px) / 3); align-items: center; text-align: center;}
+section.find>.step-box img{padding-top: 50px;}
+
+section.find>.step-box img:nth-child(5),
+section.find>.step-box img:nth-child(6){display: none;}
+
+
+/* card 구역 */
+section.card>.card-box{gap: 50px;}
+section.card>.card-box>div{position: relative; width: calc((100% - 150px) / 4);}
+section.card>.card-box>div img{width: auto;}
+section.card>.card-box>div img:nth-child(2){position: absolute; 
+                                            top: 40%; left: 35%;}
+
+section.card>.txt-box{gap:100px;}
+section.card>.txt-box>div{width: calc((100% - 300px) / 4); align-items: center; text-align: center;}
+section.card>.txt-box>div .m1{padding-top: 100px;}
+section.card>.txt-box>div P:nth-child(2){padding-top: 10px; font-size: 48px; font-weight: bold; color: #2A56F2;}
+section.card>.r1{color: #6B7280; padding-top: 20px;}
+
+/* community 구역 */
+section.community>.container img:nth-child(2){display: none;}
+section.community>.container img:nth-child(3){display: none;}
+section.community>.container img{margin-bottom: 30px;}
+section.community>.flex-box{gap: 20px;}
+section.community>.flex-box .m1{width: calc((100% - 20px) / 2); border: solid 1px #9CA3AF;
+                                border-radius: 20px; padding: 20px 10px;}
+
+
+/* friend 구역 */
+section.friend #mo-friend{display: none;}
+
+section.friend>.container{gap: 20px;}
+section.friend>.flex-box>div{width: calc((100% - 20px) / 2);}
+section.friend .friend-box{border: solid 1px #9CA3AF; border-radius: 20px; 
+                            margin-bottom: 20px;
+                            padding: 30px; position: relative;}
+
+section.friend .friend-box .friend-photo{width: 20%; position: absolute;}
+section.friend .friend-box .friend-photo img{width: 100%;}
+section.friend .friend-box .friend-info{padding-left: 25%; padding-top: 5%;}
+section.friend .friend-box .friend-info p.m4{padding-bottom: 10px;}
+section.friend .friend-box .friend-info .flex-box{align-items: center;}
+section.friend .friend-box .friend-info .flex-box p:nth-child(1){padding-right: 10px;}
+section.friend .friend-box .friend-info .flex-box p:nth-child(3){padding-left: 10px;}
+
+section.friend .friend-box p.b4{padding-top: 10%; padding-bottom: 10px;}
+
+section.friend .friend-box .bt-green2{position: absolute; top: 30px; right: 30px;}
+
+section.friend .interest .it-bt{margin: 10px 10px 10px 0; box-shadow: 0 4px 10px rgba(156, 163, 175, 0.3); 
+    border-radius: 20px; padding: 10px 20px; display: inline-block;}
+section.friend .interest .it-bt img{display: block; width: 30px; display: inline-block; vertical-align: middle;}
+section.friend .interest .it-bt .m3{display: inline-block; vertical-align: middle; margin-left: 10px;}
+
+section.friend .c-activity{cursor: pointer;}
+section.friend .community-info{padding-bottom: 30px;}
+section.friend .community-info p.r2:nth-child(1){width: 50%;}
+section.friend .community-info p.r2:nth-child(2){width: 50%;}
+section.friend .fa-circle-xmark{color: #2A56F2; font-size: 30px; position: absolute; right: 10px; bottom: 20px;
+                                cursor: pointer;}
+section.friend .fa-circle-xmark:hover{opacity: 0.5;}
+
+section.friend .self{overflow: hidden; cursor: pointer;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;}
+section.friend .self.open{-webkit-line-clamp:unset;}
+section.friend .friend-box-hide{display: none;}
+
+section.friend .friend-find{padding-top: 30px; text-align: center;}
+
+
+
+
+@media(max-width:1400px){
+
+/* flag 구역 */
+section.flag .flag-box>div .m2{font-size: 18px;}
+
+
+/* card 구역 */
+section.card>.card-box{gap: 40px;}
+section.card>.card-box>div{position: relative; width: calc((100% - 120px) / 4);}
+section.card>.card-box>div img{width: 70%}
+
+}
+
+
+@media(max-width:1300px){
+/* flag 구역 */
+section.flag .flag-box{gap: 20px;}
+section.flag .flag-box>div{width: calc((100% - 200px) / 11);}
+section.flag .flag-box>div .m2{font-size: 16px;}
+
+
+/* card 구역 */
+section.card>.txt-box>div P:nth-child(2){font-size: 40px;}
+
+
+/* friend 구역 */
+section.friend .friend-box .friend-photo{width: 15%;}
+section.friend .friend-box .friend-info{padding-left: 20%; padding-top: 0;}
+
+}
+
+@media(max-width:1200px){
+
+/* banner 구역 */
+section.banner .banner-txt1{font-size: 50px;}
+section.banner .banner-txt2{font-size: 30px;}
+
+/* flag 구역 */
+section.flag .flag-box{gap: 10px; margin: auto;}
+section.flag .flag-box>div{width: calc((100% - 100px) / 11);}
+section.flag .flag-box>div .m2{font-size: 16px;}
+
+/* find 구역 */
+section.find>.step-box{gap: 100px;}
+section.find>.step-box div{width: calc((100% - 200px) / 3);}
+
+/* card 구역 */
+section.card>.card-box{gap: 20px;}
+section.card>.card-box>div{position: relative; width: calc((100% - 60px) / 4);}
+section.card>.card-box>div img{width: 60%}
+section.card>.txt-box{gap:50px;}
+section.card>.txt-box>div{width: calc((100% - 150px) / 4);}
+
+/* community 구역 */
+section.community>.flex-box .m1{font-size: 26px;}
+
+
+
+}
+
+@media(max-width:992px){
+/* *{border: solid 1px red;} */
+section{margin-bottom: 100px;}
+
+/* banner 구역 */
+section.banner .banner-txt1{font-size: 40px; padding-bottom: 10px;}
+section.banner .banner-txt2{font-size: 24px; padding-bottom: 30px;}
+section.banner .bt-green{font-size: 24px; padding: 12px 24px;}
+
+
+/* flag 구역 */
+section.flag .flag-box{justify-content: center; gap: 30px;}
+section.flag .flag-box>div{width: calc((100% - 150px) / 6);}
+section.flag .flag-box>div .m2{font-size: 20px;}
+
+
+/* find 구역 */
+section.find>.step-box img:nth-child(4),
+section.find>.step-box img:nth-child(6){display: none;}
+section.find>.step-box img:nth-child(5){display: block;}
+section.find br{display: none;}
+
+section.find>.step-box{gap: 0}
+section.find>.step-box div{width: 100%;}
+section.find>.step-box img{padding-top: 30px; padding-bottom: 50px;}
+section.find>.step-box>div:nth-child(3) img{padding-bottom: 0;}
+
+
+/* card 구역 */
+section.card>.card-box{gap: 50px; padding: 0 60px;}
+section.card>.card-box>div{position: relative; width: calc((100% - 50px) / 2); margin-bottom: 30px;}
+section.card>.card-box>div img{width: auto;}
+section.card>.card-box>div img:nth-child(2){position: absolute; 
+                                            top: 40%; left: 32%;}
+
+section.card>.txt-box{gap:30px;}
+section.card>.txt-box>div{width: calc((100% - 90px) / 4);}
+section.card>.txt-box>div .m1{padding-top: 80px;}
+section.card>.txt-box>div P:nth-child(2){font-size: 32px;}
+
+
+/* community 구역 */
+section.community>.container img:nth-child(1){display: none;}
+section.community>.container img:nth-child(2){display: block;}
+section.community>.container img:nth-child(3){display: none;}
+section.community>.flex-box .m1{width: 100%;}
+
+/* friend 구역 */
+section.friend #pc-friend{display: none;}
+section.friend #mo-friend{display: block; position: relative; width: 80%;}
+
+section.friend .friend-box{margin: 0;}
+section.friend .friend-box .friend-info{width: 100%; margin-left: 0; padding-top: 3%;}
+
+
+section.friend .friend-box p.b4{padding-top: 5%;}
+section.friend .swiper-button-next{right: -30px; z-index: 0;}
+section.friend .swiper-button-prev{left: -30px;}
+section.friend .swiper-pagination{position: absolute; top: 100%; z-index: 0;}
+:root {--swiper-navigation-size: 32px;}
+.swiper-horizontal>.swiper-pagination-bullets,.swiper-pagination-horizontal.swiper-pagination-bullets
+{.swiper-pagination-bullet{
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 0)
+    }}
+section.friend .swiper-pagination-bullet{
+            height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 4px));
+            width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 80px));
+            border-radius: var(--swiper-pagination-bullet-border-radius, 0);}
+
+section.friend .friend-find{padding-top: 50px;}
+
+}
+
+@media(max-width:760px){
+/* banner 구역 */
+section.banner .banner-txt1{font-size: 30px;}
+section.banner .banner-txt2{font-size: 18px;}
+section.banner .bt-green{font-size: 20px; padding: 10px 20px;}
+
+/* flag 구역 */
+section.flag .flag-box{gap: 20px;}
+section.flag .flag-box>div{width: calc((100% - 120px) / 6);}
+section.flag .flag-box>div .m2{font-size: 16px;}
+
+
+/* card 구역 */
+section.card>.card-box{gap: 30px; padding: 0 30px;}
+section.card>.card-box>div{position: relative; width: calc((100% - 50px) / 2); margin-bottom: 30px;}
+section.card>.card-box>div img{width: 80%;}
+section.card>.card-box>div img:nth-child(2){position: absolute; 
+                                            top: 40%; left: 32%;}
+
+section.card>.txt-box{gap:10px;}
+section.card>.txt-box>div{width: calc((100% - 30px) / 2);}
+section.card>.txt-box>div .m1{padding-top: 50px;}
+section.card>.txt-box>div:nth-child(3) .m1,
+section.card>.txt-box>div:nth-child(4) .m1{padding-top: 30px;}
+section.card>.txt-box>div p:nth-child(2){font-size: 28px;}
+section.card>.r1 span{display: block;}
+section.card>.m1 span{display: block;}
+}
+
+@media(max-width:630px){
+/* banner 구역 */
+/* 감추기, 보이기 */
+#pc-banner{display: none;}
+#mo-banner{display: block;}
+section.flag>.m30 span:nth-child(3){display: block;}
+
+section.banner img{margin-top: 70%; width: 100%;}
+section.banner .banner-txt{top: -50%;}
+section.banner .banner-txt1{font-size: 30px;}
+section.banner .banner-txt2{font-size: 18px; padding-bottom: 20px;}
+section.banner .bt-green{font-size: 20px; padding: 10px 20px;}
+
+/* flag 구역, 스와이퍼 변경 */
+/* 감추기, 보이기 */
+section.flag .swiper{display: block;}
+section.flag .flag-box{display: none;}
+
+
+section.flag .swiper-slide{text-align: center;}
+section.flag .swiper img{border-radius: 50%; border: solid 1px #9CA3AF;}
+section.flag .swiper .m2{padding-top: 10px; font-size: 18px;}
+
+section.flag .m1 span:nth-child(3){display: block;}
+
+/* find 구역 */
+section.find br{display: block;}
+section.find>.m1 span:nth-child(2){display: block;}
+
+
+
+}
+
+
+@media(max-width:500px){
+/* community 구역 */
+section.community>.flex-box .m1{font-size: 20px;}
+
+
+/* friend 구역 */
+section.friend #mo-friend{width: 100%;}
+section.friend .friend-box{padding: 20px;  border-radius: 10px;}
+section.friend .friend-box .bt-green2{position: absolute; top: 20px; right: 20px;}
+
+section.friend .swiper-button-next, section.friend .swiper-button-next{display: none;}
+section.friend .interest .it-bt img{width: 20px;}
+section.friend .interest .it-bt .m3{font-size: 18px;}
+section.friend .fa-circle-xmark{font-size: 20px;}
+
+section.friend .swiper-pagination-bullet{
+            height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 4px));
+            width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 60px));
+            border-radius: var(--swiper-pagination-bullet-border-radius, 0);}
+
+section.friend .friend-find{padding-top: 50px;}
+}
+
+
+@media(max-width:393px){
+section{margin-bottom: 80px;}
+
+/* banner 구역 */
+/* 배너 텍스트, 이미지 위치 조정(top 값) */
+section.banner img{margin-top: 80%;}
+section.banner .banner-txt{top: -55%;}
+
+/* find 구역 */
+section.find>.step-box img:nth-child(4),
+section.find>.step-box img:nth-child(5){display: none;}
+section.find>.step-box img:nth-child(6){display: block;}
+section.find>.step-box img{padding-top: 20px; padding-bottom: 20px;}
+
+/* card 구역 */
+section.card>.txt-box>div p:nth-child(2){font-size: 24px;}
+
+
+/* community 구역 */
+section.community>.container img:nth-child(1){display: none;}
+section.community>.container img:nth-child(2){display: none;}
+section.community>.container img:nth-child(3){display: block;}
+section.community>.container img{margin-bottom: 20px;}
+section.community>.flex-box{gap: 10px;}
+section.community>.flex-box .m1{border-radius: 10px; padding: 10px; font-size: 18px;}
+
+}
