@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/31b4a74fd6.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<title>LangSwap</title>
+<style>
+
+</style>
+</head>
+<body>
+    <header>
+        <!-- pc header    -->
+        <div id="pc-header">
+            <nav class="container flex-box">
+                <a href="index.html" class="logo">LangSwap</a>
+                <ul class="menu">
+                    <li><a href="javascript:void(0)">LangSwap</a>
+                        <ul class="pc-sub-menu">
+                            <li><a href="javascript:void(0)">서비스 소개</a></li>
+                            <li><a href="javascript:void(0)">언어 교환 방식</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sub1.html">친구 찾기</a></li>
+                    <li><a href="sub2.html">커뮤니티</a>
+                        <ul class="pc-sub-menu">
+                            <li class="sub-menu2"><a href="sub2.html">온라인</a></li>
+                            <li class="sub-menu2"><a href="sub2.html">오프라인</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="javascript:void(0)">이용안내</a>
+                        <ul class="pc-sub-menu">
+                            <li class="sub-menu2"><a href="javascript:void(0)">공지사항</a></li>
+                            <li class="sub-menu2"><a href="javascript:void(0)">자주 묻는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li><div class="down"><img src="img/ko-flag-small.png" alt=""><span class="selected-lang"> KO </span><i class="fa-solid fa-chevron-down"></i></div>
+                        <ul>
+                            <li class="down-item"><img src="img/uk-flag-small.png" alt=""><span style="display: inline-block;"> EN</span><span class="point"><i class="fa-solid fa-caret-right"></i></span></li>
+                            <li class="down-item"><img src="img/sp-flag-small.png" alt=""><span style="display: inline-block;"> ES</span><span class="point"><i class="fa-solid fa-caret-right"></i></span></li>
+                            <li class="down-item"><img src="img/fr-flag-small.png" alt=""><span style="display: inline-block;"> FR</span><span class="point"><i class="fa-solid fa-caret-right"></i></span></li>
+                            <li class="down-item"><img src="img/ge-flag-small.png" alt=""><span style="display: inline-block;"> DE</span><span class="point"><i class="fa-solid fa-caret-right"></i></span></li>
+                            <li class="down-item"><img src="img/pr-flag-small.png" alt=""><span style="display: inline-block;"> PT</span><span class="point"><i class="fa-solid fa-caret-right"></i></span></li>
+                            <li class="down-item"><img src="img/ru-flag-small.png" alt=""><span style="display: inline-block;"> RU</span><span class="point"><i class="fa-solid fa-caret-right"></i></span></li>
+                            <li class="down-item"><img src="img/it-flag-small.png" alt=""><span style="display: inline-block;"> IT</span><span class="point"><i class="fa-solid fa-caret-right"></i></span></li>
+                            <li class="down-item"><img src="img/jp-flag-small.png" alt=""><span style="display: inline-block;"> JP</span><span class="point"><i class="fa-solid fa-caret-right"></i></span></li>
+                            <li class="down-item"><img src="img/ko-flag-small.png" alt=""><span style="display: inline-block;"> KO</span><span class="point"><i class="fa-solid fa-caret-right"></i></span></li>
+                            <li class="down-item"><img src="img/ch-flag-small.png" alt=""><span style="display: inline-block;"> ZH</span><span class="point"><i class="fa-solid fa-caret-right"></i></span></li>
+                        </ul>                  
+                    </li>                   
+                    <li><a href="javascript:void(0)">마이페이지</a></li>
+                </ul>        
+            </nav>
+        </div>
+
+        <!-- mo header -->
+        <div id="mo-header">
+            <nav class="flex-box">
+                <!-- 왼쪽 -->
+                <a href="index.html" class="logo">LangSwap</a>
+                <!-- 서브 메뉴 -->
+                <div class="sub-menu">
+                    <ul>
+                        <i class="fa-solid fa-arrow-up-right-from-square exit"></i>
+
+                        <li class="sub-menu-list"><a href="javascript:void(0)">LangSwap <i class="fa-solid fa-chevron-right right"></i></a></li>
+                        <li class="sub-menu2"><a href="index.html">서비스 소개</a></li>
+                        <li class="sub-menu2"><a href="index.html">언어 교환 방식</a></li>
+
+                        <li class="sub-menu-list"><a href="sub1.html">친구 찾기 </a></li>
+
+                        <li class="sub-menu-list"><a href="javascript:void(0)">커뮤니티 <i class="fa-solid fa-chevron-right right"></i></a></li>
+                        <li class="sub-menu2"><a href="sub2.html">온라인</a></li>
+                        <li class="sub-menu2"><a href="sub2.html">오프라인</a></li>
+
+                        <li class="sub-menu-list"><a href="javascript:void(0)">이용안내 <i class="fa-solid fa-chevron-right right"></i></a></li>
+                        <li class="sub-menu2"><a href="index.html">공지사항</a></li>
+                        <li class="sub-menu2"><a href="index.html">자주 묻는 질문</a></li>
+                    </ul>
+                </div>
+                <!-- 오른쪽 -->
+                <ul class="flex-box">
+                    <li><div class="down"><img src="img/ko-flag-small.png" alt=""><span class="selected-lang"> KO </span><i class="fa-solid fa-chevron-down"></i></div>
+                        <ul>
+                            <li class="down-item"><img src="img/uk-flag-small.png" alt=""><span style="display: inline-block;"> EN</span></li>
+                            <li class="down-item"><img src="img/sp-flag-small.png" alt=""><span style="display: inline-block;"> ES</span></li>
+                            <li class="down-item"><img src="img/fr-flag-small.png" alt=""><span style="display: inline-block;"> FR</span></li>
+                            <li class="down-item"><img src="img/ge-flag-small.png" alt=""><span style="display: inline-block;"> DE</span></li>
+                            <li class="down-item"><img src="img/pr-flag-small.png" alt=""><span style="display: inline-block;"> PT</span></li>
+                            <li class="down-item"><img src="img/ru-flag-small.png" alt=""><span style="display: inline-block;"> RU</span></li>
+                            <li class="down-item"><img src="img/it-flag-small.png" alt=""><span style="display: inline-block;"> IT</span></li>
+                            <li class="down-item"><img src="img/jp-flag-small.png" alt=""><span style="display: inline-block;"> JP</span></li>
+                            <li class="down-item"><img src="img/ko-flag-small.png" alt=""><span style="display: inline-block;"> KO</span></li>
+                            <li class="down-item"><img src="img/ch-flag-small.png" alt=""><span style="display: inline-block;"> ZH</span></li>
+                        </ul>                  
+                    </li>                   
+                    <li class="user"><i class="fa-solid fa-circle-user"></i></li>
+                    <li class="menu-bt"><i class="fa-solid fa-bars"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner">
+            <div class="container">
+                <div class="banner-txt">
+                    <h2 class="banner-txt1">Real People<br>Real Conversations</h2>
+                    <h2 class="banner-txt2">사람과 사람을 잇는 진짜 대화</h2>
+                    <div>
+                        <a href="javascript:void(0)" class="bt-green">앱다운로드</a>
+                    </div>
+                </div>
+                <img src="img/index-banner.png" alt="" id="pc-banner">
+                <img src="img/index-mo-banner.png" alt="" id="mo-banner">  
+            </div>
+            
+    </section>
+
+    <section class="flag">
+        <h2 class="title1">전 세계의 언어를 한 곳에서</h2>
+        <div class="container flex-box flag-box">
+            <div>
+                <img src="img/index-flag1.png" alt="">
+                <p class="m2">영어</p>
+            </div>
+            <div>
+                <img src="img/index-flag2.png" alt="">
+                <p class="m2">스페인어</p>
+            </div>
+            <div>
+                <img src="img/index-flag3.png" alt="">
+                <p class="m2">프랑스어</p>
+            </div>
+            <div>
+                <img src="img/index-flag4.png" alt="">
+                <p class="m2">독일어</p>
+            </div>
+            <div>
+                <img src="img/index-flag5.png" alt="">
+                <p class="m2">이탈리아어</p>
+            </div>
+            <div>
+                <img src="img/index-flag6.png" alt="">
+                <p class="m2">포르투갈어</p>
+            </div>
+            <div>
+                <img src="img/index-flag7.png" alt="">
+                <p class="m2">러시아어</p>
+            </div>
+            <div>
+                <img src="img/index-flag8.png" alt="">
+                <p class="m2">일본어</p>
+            </div>
+            <div>
+                <img src="img/index-flag9.png" alt="">
+                <p class="m2">한국어</p>
+            </div>
+            <div>
+                <img src="img/index-flag10.png" alt="">
+                <p class="m2">중국어</p>
+            </div>
+            <div>
+                <img src="img/index-flag11.png" alt="">
+                <p class="m2">기타</p>
+            </div>
+        </div>
+        <!-- 스와이퍼 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper container">
+                <div class="swiper-slide">
+                    <img src="img/index-flag1.png" alt="">
+                    <p class="m2">영어</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/index-flag2.png" alt="">
+                    <p class="m2">스페인어</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/index-flag3.png" alt="">
+                <p class="m2">프랑스어</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/index-flag4.png" alt="">
+                <p class="m2">독일어</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/index-flag5.png" alt="">
+                <p class="m2">이탈리아어</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/index-flag6.png" alt="">
+                <p class="m2">포르투갈어</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/index-flag7.png" alt="">
+                <p class="m2">러시아어</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/index-flag8.png" alt="">
+                <p class="m2">일본어</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/index-flag9.png" alt="">
+                <p class="m2">한국어</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/index-flag10.png" alt="">
+                <p class="m2">중국어</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/index-flag11.png" alt="">
+                    <p class="m2">기타</p>
+                </div>
+                <div class="swiper-slide" style="opacity: 0;">
+                    <img src="img/index-flag11.png" alt="">
+                    <p class="m2">기타</p>
+                </div>
+            </div>
+        </div>
+    <p class="m1">전 세계 사용자와 <span class="m1-bb">실제 대화</span>를 통해<br>
+                    <span>언어와 문화를 자연스럽게</span> 교류하고 학습할 수 있습니다</p>
+    </section>
+
+    <section class="find">
+        <h2 class="title1">쉽고 빠른 친구 찾기</h2>
+        <div class="container flex-box step-box">
+            <div>
+                <p class="b1">1</p>
+                <p class="b2">언어와 관심사 선택</p>
+                <p class="m3">관심 있는 친구를 선택해 <br>정보를 확인합니다</p>
+                <img src="img/index-step1.png" alt="">
+                <img src="img/index-step1-tablet.png" alt="">
+                <img src="img/index-step1-phone.png" alt="">
+            </div>
+            <div>
+                <p class="b1">2</p>
+                <p class="b2">친구 리스트 확인</p>
+                <p class="m3">나의 언어와 학습 언어, <br>관심사를 선택합니다</p>
+                <img src="img/index-step2.png" alt="">
+                <img src="img/index-step2-tablet.png" alt="">
+                <img src="img/index-step2-phone.png" alt="">
+            </div>
+            <div>
+                <p class="b1">3</p>
+                <p class="b2">대화하기</p>
+                <p class="m3">친구에게 메시지를 보내고 <br>즉시 학습을 시작합니다</p>
+                <img src="img/index-step3.png" alt="">
+                <img src="img/index-step3-tablet.png" alt="">
+                <img src="img/index-step3-phone.png" alt="">
+            </div>
+        </div>
+        <p class="m1">누구나 <span class="m1-bb">쉽고 빠르게 언어 교환</span>을 <span>시작할 수 있습니다</span></p>
+    </section>
+
+    <section class="card">
+        <h2 class="title1">다양한 언어 조합</h2>
+        <div class="container flex-box card-box">
+            <div>
+                <img src="img/index-com-en.png" alt="">
+                <img src="img/index-com-es.png" alt="">
+            </div>
+            <div>
+                <img src="img/index-com-en.png" alt="">
+                <img src="img/index-com-ko.png" alt="">
+            </div>
+            <div>
+                <img src="img/index-com-en.png" alt="">
+                <img src="img/index-com-fr.png" alt="">
+            </div>
+            <div>
+                <img src="img/index-com-ko.png" alt="">
+                <img src="img/index-com-jp.png" alt="">
+            </div>
+        </div>
+        <div class="container flex-box txt-box">
+            <div>
+                <p class="m1">지원언어</p>
+                <p>20개</p>
+            </div>
+            <div>
+                <p class="m1">언어조합</p>
+                <p>480개 이상</p>
+            </div>
+            <div>
+                <p class="m1">누적대화</p>
+                <p>712,000회</p>
+            </div>
+            <div>
+                <p class="m1">활성사용자</p>
+                <p>38,700명</p>
+            </div>
+        </div>
+        <p class="r1">(해당 수치는 사용자의 언어 선택 방식에 따라 생성되며, <span>최근 30일 기준으로 지속적으로 업데이트됩니다)</span></p>
+        <p class="m1">학습하고 싶은 모든 언어들을 <span>직접 경험해보세요</span></p>
+    </section>
+
+    <section class="community">
+        <h2 class="title1">일상 공유와 언어 학습을 동시에</h2>
+        <div class="container">
+            <img src="img/index-community.png" alt="">
+            <img src="img/index-community-tablet.png" alt="">
+            <img src="img/index-community-phone.png" alt="">
+        </div>
+        <div class="container flex-box">
+            <p class="m1">
+                커뮤니티에 일상을 공유하며<br>
+                <span class="m1-bb">자연스럽게 언어를 학습</span> 할 수 있습니다
+            </p>
+            <p class="m1">
+                댓글로 지속적인 소통을 이어가고<br>
+                <span class="m1-bb">채팅으로 발전</span> 시켜보세요
+            </p>
+            <p class="m1">
+                커뮤니티 활동을 통해<br>
+                <span class="m1-bb">다양한 문화를 경험</span> 할 수 있습니다
+            </p>
+            <p class="m1">
+                언어 학습을 넘어<br>
+                <span class="m1-bb">지속 가능한 교류 경험</span>을 제공합니다
+            </p>
+        </div>
+    </section>
+
+    <section class="friend">
+        <h2 class="title1">추천 친구 확인하기</h2>
+        <div class="container flex-box" id="pc-friend">
+            <div>
+                <div class="friend-box">
+                    <div class="friend-photo">
+                        <img src="img/index-friend1.png" alt="">
+                    </div>
+                    <div class="friend-info">
+                        <p class="b3">Isabel</p>
+                        <div class="flex-box">
+                            <p class="b4-b">ES</p>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <p class="b4-b">KO</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="javascript:void(0)" class="bt-green2"><i class="fa-regular fa-comments"></i></a>
+                    </div>
+                    <p class="b4">자기소개</p>
+                    <p class="r2 self">
+                        I grew up in the city and really enjoy its culture, music, and cafés.
+                        I’m interested in learning about different cultures and meeting people from around the world.
+                        In my free time, I like watching football, listening to music, and going for walks around the city.
+                        I’m friendly, relaxed, and always open to a good conversation. 
+                    </p>
+                    <div class="friend-box-hide">
+                        <p class="b4">언어 학습 목표</p>
+                        <p class="r2">
+                            I want to practice Korean through real conversations and become more comfortable speaking. 
+                            My goal is to express my thoughts clearly without worrying too much about mistakes.
+                        </p>
+                        <p class="b4">관심사</p>
+                        <div class="interest">
+                            <div class="it-bt">
+                                <img src="img/icon1.png" alt="">
+                                <span class="m3">영화</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon2.png" alt="">
+                                <span class="m3">커피</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon3.png" alt="">
+                                <span class="m3">음악</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon4.png" alt="">
+                                <span class="m3">축구</span>
+                            </div>
+                        </div>
+                        <p class="b4"><span class="c-activity">커뮤니티 활동 <i class="fa-solid fa-angle-right"></i></span></p>
+                        <div class="flex-box community-info">
+                            <p class="r2">포스팅 0건</p>
+                            <p class="r2">댓글 23건</p>
+                        </div>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+    
+                <div class="friend-box">
+                    <div class="friend-photo">
+                        <img src="img/index-friend2.png" alt="">
+                    </div>
+                    <div class="friend-info">
+                        <p class="b3">Daniela</p>
+                        <div class="flex-box">
+                            <p class="b4-b">ES, EN, FR</p>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <p class="b4-b">KO</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="javascript:void(0)" class="bt-green2"><i class="fa-regular fa-comments"></i></a>
+                    </div>
+                    <p class="b4">자기소개</p>
+                    <p class="r2 self">
+                        Hello, I’m Emilio from Mexico City, Mexico.
+                        I enjoy exploring the city, trying new food, and spending time with friends.
+                        I’m curious about other cultures and like practicing English through conversation.
+                        In my free time, I enjoy watching movies, traveling, and learning new things.
+                        I’m easygoing, open-minded, and happy to connect with new people.
+                    </p>
+                    <div class="friend-box-hide">
+                        <p class="b4">언어 학습 목표</p>
+                        <p class="r2">
+                        My goal is to improve my English for both personal growth and international communication. 
+                        I want to become more fluent and confident when speaking with new people.
+                        </p>
+                        <p class="b4">관심사</p>
+                        <div class="interest">
+                            <div class="it-bt">
+                                <img src="img/icon1.png" alt="">
+                                <span class="m3">영화</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon3.png" alt="">
+                                <span class="m3">음악</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon5.png" alt="">
+                                <span class="m3">독서</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon6.png" alt="">
+                                <span class="m3">여행</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon7.png" alt="">
+                                <span class="m3">캠핑</span>
+                            </div>
+                        </div>
+                        <p class="b4"><span class="c-activity">커뮤니티 활동 <i class="fa-solid fa-angle-right"></i></span></p>
+                        <div class="flex-box community-info">
+                            <p class="r2">포스팅 0건</p>
+                            <p class="r2">댓글 23건</p>
+                        </div>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="friend-box">
+                    <div class="friend-photo">
+                        <img src="img/index-friend3.png" alt="">
+                    </div>
+                    <div class="friend-info">
+                        <p class="b3">Mateo</p>
+                        <div class="flex-box">
+                            <p class="b4-b">ES, EN</p>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <p class="b4-b">KO</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="javascript:void(0)" class="bt-green2"><i class="fa-regular fa-comments"></i></a>
+                    </div>
+                    <p class="b4">자기소개</p>
+                    <p class="r2 self">
+                        I grew up in the city and really enjoy its culture, music, and cafés.
+                        I’m interested in learning about different cultures and meeting people from around the world.
+                        In my free time, I like watching football, listening to music, and going for walks around the city.
+                        I’m friendly, relaxed, and always open to a good conversation. 
+                    </p>
+                    <div class="friend-box-hide">
+                        <p class="b4">언어 학습 목표</p>
+                        <p class="r2">
+                        I want to practice Korean through real conversations and become more comfortable speaking. 
+                        My goal is to express my thoughts clearly without worrying too much about mistakes.
+                        </p>
+                        <p class="b4">관심사</p>
+                        <div class="interest">
+                            <div class="it-bt">
+                                <img src="img/icon1.png" alt="">
+                                <span class="m3">영화</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon2.png" alt="">
+                                <span class="m3">커피</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon3.png" alt="">
+                                <span class="m3">음악</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon4.png" alt="">
+                                <span class="m3">축구</span>
+                            </div>
+                        </div>
+                        <p class="b4"><span class="c-activity">커뮤니티 활동 <i class="fa-solid fa-angle-right"></i></span></p>
+                        <div class="flex-box community-info">
+                            <p class="r2">포스팅 0건</p>
+                            <p class="r2">댓글 23건</p>
+                        </div>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+    
+                <div class="friend-box">
+                    <div class="friend-photo">
+                        <img src="img/index-friend4.png" alt="">
+                    </div>
+                    <div class="friend-info">
+                        <p class="b3">Emilio</p>
+                        <div class="flex-box">
+                            <p class="b4-b">ES, EN, FR</p>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            <p class="b4-b">KO, JP</p>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="javascript:void(0)" class="bt-green2"><i class="fa-regular fa-comments"></i></a>
+                    </div>
+                    <p class="b4">자기소개</p>
+                    <p class="r2 self">
+                        Hello, I’m Emilio from Mexico City, Mexico.
+                        I enjoy exploring the city, trying new food, and spending time with friends.
+                        I’m curious about other cultures and like practicing English through conversation.
+                        In my free time, I enjoy watching movies, traveling, and learning new things.
+                        I’m easygoing, open-minded, and happy to connect with new people.
+                    </p>
+                    <div class="friend-box-hide">
+                        <p class="b4">언어 학습 목표</p>
+                        <p class="r2">
+                        My goal is to improve my English for both personal growth and international communication. 
+                        I want to become more fluent and confident when speaking with new people.
+                        </p>
+                        <p class="b4">관심사</p>
+                        <div class="interest">
+                            <div class="it-bt">
+                                <img src="img/icon1.png" alt="">
+                                <span class="m3">영화</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon3.png" alt="">
+                                <span class="m3">음악</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon5.png" alt="">
+                                <span class="m3">독서</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon6.png" alt="">
+                                <span class="m3">여행</span>
+                            </div>
+                            <div class="it-bt">
+                                <img src="img/icon7.png" alt="">
+                                <span class="m3">캠핑</span>
+                            </div>
+                        </div>
+                        <p class="b4"><span class="c-activity">커뮤니티 활동 <i class="fa-solid fa-angle-right"></i></span></p>
+                        <div class="flex-box community-info">
+                            <p class="r2">포스팅 0건</p>
+                            <p class="r2">댓글 23건</p>
+                        </div>
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="mo-friend">
+            <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="friend-box swiper-slide">
+                            <div class="friend-photo">
+                                <img src="img/index-friend1.png" alt="">
+                            </div>
+                            <div class="friend-info">
+                                <p class="b3">Isabel</p>
+                                <div class="flex-box">
+                                    <p class="b4-b">ES</p>
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                    <p class="b4-b">KO</p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="bt-green2"><i class="fa-regular fa-comments"></i></a>
+                            </div>
+                            <p class="b4">자기소개</p>
+                            <p class="r2 self">
+                                I grew up in the city and really enjoy its culture, music, and cafés.
+                                I’m interested in learning about different cultures and meeting people from around the world.
+                                In my free time, I like watching football, listening to music, and going for walks around the city.
+                                I’m friendly, relaxed, and always open to a good conversation. 
+                            </p>
+                            <div class="friend-box-hide">
+                                <p class="b4">언어 학습 목표</p>
+                                <p class="r2">
+                                    I want to practice Korean through real conversations and become more comfortable speaking. 
+                                    My goal is to express my thoughts clearly without worrying too much about mistakes.
+                                </p>
+                                <p class="b4">관심사</p>
+                                <div class="interest">
+                                    <div class="it-bt">
+                                        <img src="img/icon1.png" alt="">
+                                        <span class="m3">영화</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon2.png" alt="">
+                                        <span class="m3">커피</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon3.png" alt="">
+                                        <span class="m3">음악</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon4.png" alt="">
+                                        <span class="m3">축구</span>
+                                    </div>
+                                </div>
+                                <p class="b4"><span class="c-activity">커뮤니티 활동 <i class="fa-solid fa-angle-right"></i></span></p>
+                                <div class="flex-box community-info">
+                                    <p class="r2">포스팅 0건</p>
+                                    <p class="r2">댓글 23건</p>
+                                </div>
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
+            
+                        <div class="friend-box swiper-slide">
+                            <div class="friend-photo">
+                                <img src="img/index-friend2.png" alt="">
+                            </div>
+                            <div class="friend-info">
+                                <p class="b3">Daniela</p>
+                                <div class="flex-box">
+                                    <p class="b4-b">ES, EN, FR</p>
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                    <p class="b4-b">KO</p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="bt-green2"><i class="fa-regular fa-comments"></i></a>
+                            </div>
+                            <p class="b4">자기소개</p>
+                            <p class="r2 self">
+                                Hello, I’m Emilio from Mexico City, Mexico.
+                                I enjoy exploring the city, trying new food, and spending time with friends.
+                                I’m curious about other cultures and like practicing English through conversation.
+                                In my free time, I enjoy watching movies, traveling, and learning new things.
+                                I’m easygoing, open-minded, and happy to connect with new people.
+                            </p>
+                            <div class="friend-box-hide">
+                                <p class="b4">언어 학습 목표</p>
+                                <p class="r2">
+                                My goal is to improve my English for both personal growth and international communication. 
+                                I want to become more fluent and confident when speaking with new people.
+                                </p>
+                                <p class="b4">관심사</p>
+                                <div class="interest">
+                                    <div class="it-bt">
+                                        <img src="img/icon1.png" alt="">
+                                        <span class="m3">영화</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon3.png" alt="">
+                                        <span class="m3">음악</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon5.png" alt="">
+                                        <span class="m3">독서</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon6.png" alt="">
+                                        <span class="m3">여행</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon7.png" alt="">
+                                        <span class="m3">캠핑</span>
+                                    </div>
+                                </div>
+                                <p class="b4"><span class="c-activity">커뮤니티 활동 <i class="fa-solid fa-angle-right"></i></span></p>
+                                <div class="flex-box community-info">
+                                    <p class="r2">포스팅 0건</p>
+                                    <p class="r2">댓글 23건</p>
+                                </div>
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
+        
+                        <div class="friend-box swiper-slide">
+                            <div class="friend-photo">
+                                <img src="img/index-friend3.png" alt="">
+                            </div>
+                            <div class="friend-info">
+                                <p class="b3">Mateo</p>
+                                <div class="flex-box">
+                                    <p class="b4-b">ES, EN</p>
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                    <p class="b4-b">KO</p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="bt-green2"><i class="fa-regular fa-comments"></i></a>
+                            </div>
+                            <p class="b4">자기소개</p>
+                            <p class="r2 self">
+                                I grew up in the city and really enjoy its culture, music, and cafés.
+                                I’m interested in learning about different cultures and meeting people from around the world.
+                                In my free time, I like watching football, listening to music, and going for walks around the city.
+                                I’m friendly, relaxed, and always open to a good conversation. 
+                            </p>
+                            <div class="friend-box-hide">
+                                <p class="b4">언어 학습 목표</p>
+                                <p class="r2">
+                                I want to practice Korean through real conversations and become more comfortable speaking. 
+                                My goal is to express my thoughts clearly without worrying too much about mistakes.
+                                </p>
+                                <p class="b4">관심사</p>
+                                <div class="interest">
+                                    <div class="it-bt">
+                                        <img src="img/icon1.png" alt="">
+                                        <span class="m3">영화</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon2.png" alt="">
+                                        <span class="m3">커피</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon3.png" alt="">
+                                        <span class="m3">음악</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon4.png" alt="">
+                                        <span class="m3">축구</span>
+                                    </div>
+                                </div>
+                                <p class="b4"><span class="c-activity">커뮤니티 활동 <i class="fa-solid fa-angle-right"></i></span></p>
+                                <div class="flex-box community-info">
+                                    <p class="r2">포스팅 0건</p>
+                                    <p class="r2">댓글 23건</p>
+                                </div>
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
+            
+                        <div class="friend-box swiper-slide">
+                            <div class="friend-photo">
+                                <img src="img/index-friend4.png" alt="">
+                            </div>
+                            <div class="friend-info">
+                                <p class="b3">Emilio</p>
+                                <div class="flex-box">
+                                    <p class="b4-b">ES, EN, FR</p>
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                    <p class="b4-b">KO, JP</p>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="javascript:void(0)" class="bt-green2"><i class="fa-regular fa-comments"></i></a>
+                            </div>
+                            <p class="b4">자기소개</p>
+                            <p class="r2 self">
+                                Hello, I’m Emilio from Mexico City, Mexico.
+                                I enjoy exploring the city, trying new food, and spending time with friends.
+                                I’m curious about other cultures and like practicing English through conversation.
+                                In my free time, I enjoy watching movies, traveling, and learning new things.
+                                I’m easygoing, open-minded, and happy to connect with new people.
+                            </p>
+                            <div class="friend-box-hide">
+                                <p class="b4">언어 학습 목표</p>
+                                <p class="r2">
+                                My goal is to improve my English for both personal growth and international communication. 
+                                I want to become more fluent and confident when speaking with new people.
+                                </p>
+                                <p class="b4">관심사</p>
+                                <div class="interest">
+                                    <div class="it-bt">
+                                        <img src="img/icon1.png" alt="">
+                                        <span class="m3">영화</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon3.png" alt="">
+                                        <span class="m3">음악</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon5.png" alt="">
+                                        <span class="m3">독서</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon6.png" alt="">
+                                        <span class="m3">여행</span>
+                                    </div>
+                                    <div class="it-bt">
+                                        <img src="img/icon7.png" alt="">
+                                        <span class="m3">캠핑</span>
+                                    </div>
+                                </div>
+                                <p class="b4"><span class="c-activity">커뮤니티 활동 <i class="fa-solid fa-angle-right"></i></span></p>
+                                <div class="flex-box community-info">
+                                    <p class="r2">포스팅 0건</p>
+                                    <p class="r2">댓글 23건</p>
+                                </div>
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="friend-find">
+            <a href="sub1.html" class="bt-blue">친구찾기</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container flex-box">
+            <div class="footer-left">
+                <a href="index.html" class="logo">LangSwap</a>
+                <p class="m5">언어 교환을 위한 글로벌 커뮤니티 플랫폼</p>
+                <p class="m5"><span class="b5">회사명</span> LangSwap Inc.</p>
+                <p class="m5"><span class="b5">대표자</span> 유경진</p>
+                <p class="m5"><span class="b5">사업자등록번호</span> 123-45-67890</p>
+                <p class="m5"><span class="b5">주소</span> 123 글로벌 스트리트, 서울, 대한민국</p>
+                <p class="m5"><span class="b5">이메일</span> contact@langswap.com</p>
+            </div>
+
+            <div class="footer-right flex-box">
+                <div class="footer-right-txt">
+                    <p class="b5">정책 및 약관</p>
+                    <ul>
+                        <li><a href="javascript:void(0)" class="m5">이용 약관</a></li>
+                        <li><a href="javascript:void(0)" class="m5">개인정보 처리방침</a></li>
+                        <li><a href="javascript:void(0)" class="m5">저작권 안내</a></li>
+                        <li><a href="javascript:void(0)" class="m5">쿠키 안내</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right-txt">
+                    <p class="b5">고객지원 안내</p>
+                    <ul>
+                        <li><a href="javascript:void(0)" class="m5">FAQ</a></li>
+                        <li><a href="javascript:void(0)" class="m5">1:1 문의</a></li>
+                        <li><a href="javascript:void(0)" class="m5">이용 가이드 / 도움말</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right-txt">
+                    <p class="b5 sns">소셜미디어</p>
+                    <ul class="flex-box">
+                        <li><a href="javascript:void(0)"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="javascript:void(0)"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="m6">“© 2026 LangSwap. All rights reserved.”</p>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3.8,
+    spaceBetween: 20,
+    grabCursor: true,
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+// 좌우 터치 시에만 실행되는 동작
+    on: {
+        sliderMove: function () {
+            $('section.friend .friend-box-hide').hide();
+            $('section.friend .friend-box-hide')
+                .siblings('.self')
+                .removeClass('open');
+        }
+    }
+
+    });
+
+
+
+</script>
+
+
+</body>
+</html>
