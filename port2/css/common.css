@@ -117,7 +117,29 @@ header nav>ul:nth-child(3) li:nth-child(1) ul li:nth-child(10){border-radius: 0 
 header nav>ul:nth-child(3) span.point{color:#fff;}
 header nav>ul:nth-child(3) li:nth-child(1) ul li:hover span.point{color: #2A56F2;}
 
+/* 헤더 애니메이션 */
+.highlight-menu {
+  position: relative;
+}
 
+.highlight-menu::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -12px;   /* 글씨와 점 사이 간격 */
+  width: 6px;
+  height: 6px;
+  background: #2A56F2;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  animation: blink-dot 1s infinite;
+}
+
+@keyframes blink-dot {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
 
 /* 제이쿼리 클래스 */
 /* header nav>ul:nth-child(3) li:nth-child(1) ul.open_lag{display: block;} */
