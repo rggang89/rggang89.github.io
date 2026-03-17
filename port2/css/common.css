@@ -117,6 +117,9 @@ header nav>ul:nth-child(3) li:nth-child(1) ul li:nth-child(10){border-radius: 0 
 header nav>ul:nth-child(3) span.point{color:#fff;}
 header nav>ul:nth-child(3) li:nth-child(1) ul li:hover span.point{color: #2A56F2;}
 
+#pc-header ul li ul.pc-sub-menu{/* border: solid 1px #1F2937; border-top: none; */
+box-shadow: 0 2px 3px rgba(0,0,0,0.1);}
+
 /* 헤더 애니메이션 */
 .highlight-menu {
   position: relative;
