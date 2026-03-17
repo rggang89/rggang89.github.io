@@ -29,6 +29,11 @@ body{font-family: "Noto Sans","Noto Sans KR", sans-serif; background-color: #f9f
 .title2{font-size: 34px; padding-bottom: 30px;}
 .title3{font-size: 30px; font-weight: 500; padding-bottom: 20px; padding-left: 10px;}
 .sub{font-size: 20px; font-weight: 300; text-align: center; padding-top: 20px;}
+.sub2{text-align: center; padding-top: 10px; padding-bottom: 30px;}
+.sub3{text-align: center; font-size: 14px; color: #2c2c2c; padding-bottom: 30px;}
+
+/* padding 설정 */
+.padding-b30{padding-bottom: 30px;}
 
 /* cover 구역 */
 section.cover .ab{position: relative; width: 100%; height: 100vh; overflow: hidden;}
@@ -118,7 +123,8 @@ section.introduce p{font-size: 20px;}
 .modal-body .con2>strong{font-size: 20px;}
 .modal-body .con2>span{padding-left: 10px;}
 .modal-body .con2{font-size: 18px; padding-bottom: 30px;}
-.modal-body a{display: block; font-size: 30px; text-align: center; padding-bottom: 30px;}
+.modal-body .a1{display: block; font-size: 30px; text-align: center; padding-bottom: 30px;}
+.modal-body .a2{display: block; font-size: 30px; text-align: center; padding-bottom: 10px;}
 
 .modal-close{position: absolute; right: 20px; top: 20px; display: block;
             width: 50px; font-size: 30px; border: 0; color: #020417; cursor: pointer;}
@@ -161,17 +167,19 @@ section.ui .flex-box .frame-box{width: calc((100% - 40px) / 3); position: relati
 section.ui .flex-box .frame-box{overflow: hidden; cursor: pointer; transition: all 0.3S;}
 section.ui .flex-box .frame-box:hover{transform: scale(1.05);}
 
-/* #app{position: relative;} */
+/* 감보기 인터렉션 구역 */
 .video-box{position: absolute; width: 290px;  background-color: #fff; height: 591px;
-    border-radius: 44px; overflow: hidden; z-index: 1000; top: 230px; left: 200px;
+    border-radius: 44px; overflow: hidden; z-index: 1000; top: 310px; left: 200px;
     box-shadow: 0 0 10px gray; display: none;}
 video{margin-top: -5px; margin-left: -6px;}
 
-#bt{background-color: #C1121F; color: #fff;padding: 10px 20px 0 20px; text-align: center;
-    font-size: 20px; cursor: pointer;}
+#bt{display: block; width: fit-content;margin: auto;
+    background-color: #C1121F; color: #fff; padding: 10px 11px; text-align: center;
+    font-size: 20px; cursor: pointer; border-radius: 50%;
+    }
 #bt:hover{background-color: #fff; color: #C1121F;}
-.bt{display: block;}
 
+.bt{display: block;}
 
 
 @media(max-width:992px){
@@ -341,20 +349,23 @@ section.ui .flex-box .frame-box{width: 100%;}
                 <p class="m-content">상세페이지</p>
                 <h2>스킨푸드 <span>토마토 선크림</span></h2>
                 <p class="con">
-                    <strong>DESIGN</strong><br>
-                    - 기존 상세페이지 리뉴얼<br>
-                    - 음식을 원료로 하는 브랜드 특성을 고려해 제품 원료인 토마토를 강조하여 디자인<br>
-                    - 화장품이라는 제품의 특성을 고려해 사용자 리뷰를 추가하여 신뢰도 상승 유도<br>
-                    - 전체적인 색감은 토마토의 레드 계열 유지, 포인트 컬러는 채도를 높여 전체적으로 통일감 부여, 중요한 내용 부각
+                    <strong>CONCEPT</strong><br>
+                    - 기존 상세페이지를 분석하여 브랜드 특성과 제품 강점을 효과적으로 전달할 수 있도록 리디자인하였습니다.<br>
+                    - 음식 원료를 기반으로 하는 브랜드 아이덴티티를 반영하여, 주요 성분인 토마토를 중심으로 비주얼을 재구성하였습니다.<br>
+                    - 제품의 원료와 효능이 직관적으로 전달될 수 있도록 이미지와 콘텐츠 구성을 개선하였습니다. <br>
+                    - 화장품 특성을 고려하여 사용자 리뷰 요소를 추가함으로써 신뢰도를 강화하였습니다.<br>
+                    - 전체적인 색감은 토마토의 레드 계열을 유지하고, 포인트 컬러는 채도를 높여 전체적으로 통일감을 주면서 중요한 내용을 부각할 수 있도록 하였습니다.
+                    - 토마토의 레드 계열 컬러를 메인으로 설정하여 제품 아이덴티티를 강조하였습니다. <br>
+                    - 포인트 컬러의 채도를 높여 시각적 주목도를 강화하고 핵심 정보가 돋보이도록 구성하였습니다. <br>
                 </p>
                 <p class="con2">
                     <strong>SKILL</strong><br>
                     - 생성형 AI (Chat GPT, Gemini, Adobe Firefly) 활용<br>
-                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트 생성<br></span>
-                    <span>· Gemini : 제품 구도, 빛, 그림자등 전체적인 구조 편집<br></span>
-                    <span>· Adobe Firefly : 제미나이로 생성된 이미지의 색감, 사이즈 조절에 활용</span>
+                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트를 생성하였습니다.<br></span>
+                    <span>· Gemini : 제품 구도, 빛, 그림자등 전체적인 구조 편집하였습니다.<br></span>
+                    <span>· Adobe Firefly : 제미나이로 생성된 이미지의 색감, 사이즈 조절에 활용하였습니다.</span>
                 </p>
-                <a href="https://www.theskinfood.com/shop/shopdetail.html?branduid=777&search=tomato&sort=order&xcode=005&mcode=016&scode=&GfDT=aGh3UA%3D%3D"><i class="fa-solid fa-link"></i></a>
+                <a href="https://www.theskinfood.com/shop/shopdetail.html?branduid=777&search=tomato&sort=order&xcode=005&mcode=016&scode=&GfDT=aGh3UA%3D%3D" class="a1" target="_blank"><i class="fa-solid fa-link"></i></a>
                 <img src="img/promotion/cos/1.jpg" alt="">
                 <img src="img/promotion/cos/2.jpg" alt="">
                 <img src="img/promotion/cos/3.jpg" alt="">
@@ -372,19 +383,19 @@ section.ui .flex-box .frame-box{width: 100%;}
                 <p class="m-content">상세페이지</p>
                 <h2>어떤하루 By 녹동양조 <span>고흥 유자 막걸리</span></h2>
                 <p class="con">
-                    <strong>DESIGN</strong><br>
-                    - 기존 상세페이지 리뉴얼<br>
-                    - 제품의 특성을 한눈에 확인 할 수 있도록 시각화하여 디자인<br>
-                    - 유자의 싱그럽고 따뜻한 느낌을 표현하기 위해 전체적으로 화사하고, 따뜻한 톤 유지<br>
-                    - 전체적인 색감은 제품의 특성을 강조하기 위해 유자의 옐로우 계열에서 추출하여 전체적으로 통일감 부여
+                    <strong>CONCEPT</strong><br>
+                    - 기존 상세페이지를 분석하여 정보 전달력과 시각적 완성도를 높이기 위해 리디자인하였습니다.<br>
+                    - 텍스트 위주로 구성되어 있던 상품 설명을 이미지 중심으로 재구성하여, 제품의 특성을 직관적으로 인지할 수 있도록 시각화하였습니다.<br>
+                    - 유자의 상큼함과 따뜻한 이미지를 표현하기 위해 전체적으로 밝고 화사한 톤으로 재정비하였습니다.<br>
+                    - 제품의 아이덴티티를 강조하기 위해 유자 컬러(옐로우 계열)를 중심으로 색감을 구성하였습니다. <br>
                 </p>
                 <p class="con2">
                     <strong>SKILL</strong><br>
                     - 생성형 AI (Chat GPT, Gemini, Adobe Firefly) 활용<br>
-                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트 생성<br></span>
-                    <span>· Gemini : 유자를 강조하는 제품컷 생성</span>
+                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트를 생성하였습니다.<br></span>
+                    <span>· Gemini : 유자를 강조하는 제품컷을 생성하였습니다.</span>
                 </p>
-                <a href="https://smartstore.naver.com/eotteonharu/products/11952428326"><i class="fa-solid fa-link"></i></a>
+                <a href="https://smartstore.naver.com/eotteonharu/products/11952428326" class="a1" target="_blank"><i class="fa-solid fa-link"></i></a>
                 <img src="img/promotion/food/yuzu/1.png" alt="">
                 <img src="img/promotion/food/yuzu/2.png" alt="">
                 <img src="img/promotion/food/yuzu/3.jpg" alt="">
@@ -402,19 +413,21 @@ section.ui .flex-box .frame-box{width: 100%;}
                 <p class="m-content">상세페이지</p>
                 <h2>세임디 <span>마레 오벌 플레이트</span></h2>
                 <p class="con">
-                    <strong>DESIGN</strong><br>
-                    - 기존 상세페이지 리뉴얼<br>
-                    - 제품 이미지를 구체적으로 확인하고 특성을 한눈에 파악할 수 있도록 보완<br>
-                    - 로고와 제품의 색인 블루 계열을 그대로 활용하여 깔끔한 느낌을 유도하고 전체적인 통일감 부여<br>
+                    <strong>CONCEPT</strong><br>
+                    - 기존 상세페이지를 분석하여 제품 중심의 정보 전달이 강화될 수 있도록 리디자인하였습니다.<br>
+                    - 모델 중심으로 구성되어 있던 기존 이미지를 제품 중심의 비주얼로 재구성하여, 형태와 디테일을 보다 명확하게 확인할 수 있도록 개선하였습니다.<br>
+                    - 제품의 실사용 맥락과 특징이 직관적으로 드러날 수 있도록 이미지 구성과 배치를 보완하였습니다.<br>
+                    - 로고와 제품의 메인 컬러인 블루 계열을 유지·확장하여 브랜드 아이덴티티를 강화하였습니다.<br>
+                    - 절제된 컬러 사용을 통해 깔끔한 분위기를 형성하고, 전체적인 디자인의 통일감을 높였습니다. <br>
                 </p>
                 <p class="con2">
                     <strong>SKILL</strong><br>
                     - 생성형 AI (Chat GPT, Gemini) 활용<br>
-                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트 생성<br></span>
-                    <span>· Gemini : 제품을 돋보일 수 있는 음식이 담긴 이미지 생성<br></span>
-                    <span>· Adobe Firefly : 제미나이로 생성된 이미지의 색감, 사이즈 조절에 활용</span>
+                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트를 생성하였습니다.<br></span>
+                    <span>· Gemini : 제품이 돋보일 수 있도록 음식이 담긴 이미지를 생성하였습니다.<br></span>
+                    <span>· Adobe Firefly : 제미나이로 생성된 이미지의 색감, 사이즈 조절에 활용하였습니다.</span>
                 </p>
-                <a href="https://samed.kr/Shop-Tableware-Plate/?idx=86"><i class="fa-solid fa-link"></i></a>
+                <a href="https://samed.kr/Shop-Tableware-Plate/?idx=86" class="a1" target="_blank"><i class="fa-solid fa-link"></i></a>
                 <img src="img/promotion/general/oval/1.jpg" alt="">
                 <img src="img/promotion/general/oval/2.jpg" alt="">
                 <img src="img/promotion/general/oval/3.jpg" alt="">
@@ -432,7 +445,8 @@ section.ui .flex-box .frame-box{width: 100%;}
             <div class="container-1400">
                 <p class="m-content">반응형 웹페이지</p>
                 <h2>글로벌 언어 교환 서비스 <span>LangSwap</span></h2>
-                <a href="port2/index.html" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <a href="port2/index.html" class="a2" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <p class="sub3">제작 페이지 : 로고 클릭 및 점멸 아이콘으로 표시하였습니다</p>
                 <img src="port2/images/1.jpg" alt="">
                 <img src="port2/images/2.jpg" alt="">
                 <img src="port2/images/3.jpg" alt="">
@@ -450,7 +464,8 @@ section.ui .flex-box .frame-box{width: 100%;}
             <div class="container-1400">
                 <p class="m-content">반응형 웹페이지</p>
                 <h2>반려동물 돌봄 중개 서비스 <span>PawMate</span></h2>
-                <a href="port1/index.html" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <a href="port1/index.html" class="a2" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <p class="sub3">제작 페이지 : 로고 클릭 및 점멸 아이콘으로 표시하였습니다</p>
                 <img src="port1/images/1.jpg" alt="">
                 <img src="port1/images/2.jpg" alt="">
                 <img src="port1/images/3.jpg" alt="">
@@ -462,15 +477,15 @@ section.ui .flex-box .frame-box{width: 100%;}
 </div>
 
 <!-- 모달5 구역(감보기 앱) -->
-<div class="modal" id="app">
+<div class="modal">
     <div class="modal-wrap">
         <div class="modal-body">
             <div class="container-1400">
                 <p class="m-content">앱 디자인</p>
                 <h2>감정 기록 앱 <span>감보기</span></h2>
-                <span id="bt">Interaction View</span>
+                <span id="bt"><i class="fa-solid fa-play"></i></span>
+                <p class="sub2">Interaction View</p>
                 <img src="img/ui design/app design/1.jpg" alt="">
-                <!-- <div style="background-color: #fff; height: 700px;"></div> -->
                 <img src="img/ui design/app design/2.jpg" alt="">
                 <img src="img/ui design/app design/3.jpg" alt="">
                 <img src="img/ui design/app design/4.jpg" alt="">
@@ -507,13 +522,13 @@ section.ui .flex-box .frame-box{width: 100%;}
                 <p class="m-content">이벤트페이지</p>
                 <h2>텐퍼센트 프리퀀시 <span>Hurry up, Berry up!</span></h2>
                 <p class="con">
-                    <strong>DESIGN</strong><br>
-                    - 기존 상세페이지 리뉴얼<br>
-                    - 메뉴 이미지와 이름을 한눈에 파악할 수 있도록 보완<br>
-                    - 사용자가 쿠폰을 편리하게 사용 및 확인할 수 있도록 쿠폰 아이콘 배치<br>
-                    - '베리' 라는 이벤트 특징에 맞춰 레드 계열을 활용하여 이벤트 특징을 부각
+                    <strong>CONCEPT</strong><br>
+                    - 기존 상세페이지를 분석하여 정보 전달력과 사용자 편의성을 개선하기 위해 리디자인하였습니다.<br>
+                    - 메뉴 이미지와 상품명을 한눈에 인지할 수 있도록 레이아웃과 구성 요소를 재정비하였습니다.<br>
+                    - 사용자가 쿠폰을 편리하게 사용 및 확인할 수 있도록 쿠폰 아이콘 배치하였습니다.<br>
+                    - '베리' 라는 이벤트 특징에 맞춰 레드 계열을 활용하여 이벤트 특징을 부각하였습니다.
                 </p>
-                <a href="https://tenpercentcoffee.com/bbs/board.php?bo_table=event2&wr_id=39"><i class="fa-solid fa-link"></i></a>
+                <a href="https://tenpercentcoffee.com/bbs/board.php?bo_table=event2&wr_id=39" class="a1" target="_blank"><i class="fa-solid fa-link"></i></a>
                 <img src="img/promotion/food/tenpercent.png" alt="">
                 <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
             </div>
@@ -529,15 +544,17 @@ section.ui .flex-box .frame-box{width: 100%;}
                 <p class="m-content">배너</p>
                 <h2>해피문데이 <span>홈 배너</span></h2>
                 <p class="con">
-                    <strong>DESIGN</strong><br>
-                    - 기존 홈페이지의 배너 리뉴얼<br>
-                    - 기존 홈페이지 너비 사이즈에 맞추어 제작<br>
-                    - 각 배너에 필요한 요소들의 색깔 및 톤을 사이트의 특성에 맞춰 변경해 디자인
+                    <strong>CONCEPT</strong><br>
+                    - 기존 홈페이지의 배너를 분석하여, 정보 전달과 시각적 완성도를 높이기 위해 리디자인하였습니다.<br>
+                    - PC 환경에서도 태블릿 너비로 구성된 기존 레이아웃 특성을 고려하여, 이에 최적화된 배너 사이즈로 재설계하였습니다.<br>
+                    - 불필요한 요소를 정리하고 핵심 콘텐츠 중심으로 재구성하여 가독성을 개성하였습니다.<br>
+                    - PC 화면에서도 태블릿 너비의 화면으로 구성된 기존 홈페이지의 특성에 맞춘 너비 사이즈로 제작하였습니다.<br>
+                    - 각 배너의 목적에 맞게 컬러와 톤을 재정비하여 사이트 전반의 분위기와 조화를 이루도록 하였습니다.
                 </p>
                 <p class="con2">
                     <strong>SKILL</strong><br>
                     - 생성형 AI (Chat GPT, Gemini) 활용<br>
-                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계<br></span>
+                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃을 설계하였습니다.<br></span>
                 </p>
                 <img src="img/promotion/general/happy moonday/happy moonday.png" alt="">
                 <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
@@ -546,7 +563,7 @@ section.ui .flex-box .frame-box{width: 100%;}
     </div>   
 </div>
 
-<!-- 모달9 구역(모바일 배너 이미지(다이슨, 컬리 N 마트)) -->
+<!-- 모달9 구역(모바일 배너 이미지(다이슨, 컬리 N 마트) -->
 <div class="modal" >
     <div class="modal-wrap">
         <div class="modal-body">
@@ -554,14 +571,16 @@ section.ui .flex-box .frame-box{width: 100%;}
                 <p class="m-content">배너</p>
                 <h2>모바일 배너 <span>네이버 홈</span></h2>
                 <p class="con">
-                    <strong>DESIGN</strong><br>
-                    - 각 배너에 필요한 요소들의 색깔 및 톤을 상품 및 서비스 특성에 맞춰 디자인
+                    <strong>CONCEPT</strong><br>
+                    - 모바일 환경의 특성을 고려하여, 짧은 시간 내 사용자가 정보를 직관적으로 확인할 수 있도록 간결하게 디자인하였습니다.
+                    - 모바일 환경에 최적화된 가독성을 위해 핵심 정보를 강조하여 디자인하였습니다.
+                    - 상품 및 서비스 특성에 맞는 컬러와 톤을 적용하여 콘텐츠의 성격을 직관적으로 전달하였습니다.
                 </p>
                 <p class="con2">
                     <strong>SKILL</strong><br>
                     - 생성형 AI (Chat GPT, Gemini) 활용<br>
-                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트 생성<br></span>
-                    <span>· Gemini : 컬리 N 마트 배너의 3D 이미지 생성<br></span>
+                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트를 생성하였습니다.<br></span>
+                    <span>· Gemini : 컬리 N 마트 배너의 3D 이미지 생성하였습니다.<br></span>
                 </p>
                 <img src="img/promotion/general/n mart/nmart.png" alt="">
                 <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
