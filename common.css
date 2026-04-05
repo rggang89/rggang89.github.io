@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* 기본 설정(와일드카드, 이미지, 배경 색상) */
+*{padding: 0; margin: 0; box-sizing: border-box; text-decoration: none; list-style: none;}
+img{display: block; width: 100%;}
+
+
+
+/* 플렉스, 컨테이너 클래스 */
+.container{max-width: 1400px; margin: auto; padding: 0 20px;}
+.container-1400{max-width: 1440px; margin: auto; padding: 0 20px;}
+.container-860{max-width: 900px; margin: auto; padding: 0 20px;}
+.flex-box{display: flex; flex-wrap: wrap;}
+
+
+
+/* 폰트 설정 */
+a{font-family: "Anton", sans-serif; color: #112D4E; font-size: 18px;}
+
+main h2{font-family: "Anton", sans-serif; color: #112D4E; font-size: 80px; letter-spacing: 5%;}
+
+.cover-p{font-family: "Gothic A1", sans-serif; color: #112D4E; font-size: 22px; font-weight: 400;}
+
+.about-li{font-family: "Anton", sans-serif; color: #112D4E; font-size: 34px; letter-spacing: 5%;}
+
+.about-p{font-family: "Gothic A1", sans-serif; color: #112D4E; font-size: 20px; font-weight: 400;}
+
+.works-h3{font-family: "Anton", sans-serif; color: #112D4E; font-size: 30px; letter-spacing: 5%; text-align: center; padding-bottom: 30px;}
+
+section.about .skills-bar{font-family: "Noto Sans Noto Sans KR", sans-serif; color: #112D4E;}
+
+section.promotion .frame-box p,
+section.ui .frame-box p
+{font-family: "Noto Sans Noto Sans KR", sans-serif; color: #112D4E;}
+
+.modal{font-family: "Noto Sans Noto Sans KR", sans-serif;}
+
+
+
+/* padding 설정 */
+.padding-b30{padding-bottom: 30px;}
+
+
+
+/* header 구역 */
+header{width: 100%; position: fixed; z-index: 10; left: 0; top: 0; 
+        background-color: #fff; padding: 10px;}
+
+header .container ul{text-align: center;}
+
+header .container ul li{display: inline-block; padding: 10px 50px;}
+
+header .container ul li a{padding: 10px 30px;}
+
+header .container ul li a.active {background-color: #3F72AF; color: #FFF;
+        border-radius: 50px;}
+
+
+
+/* 모달창 구역 */
+.modal{display: none; position: fixed; left: 0; top: 0; overflow-y: auto;
+        width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.7); z-index: 900;}
+
+.modal-wrap{position: absolute; left: 10%; top: 50px; display: block; width:80%;
+        padding-bottom:50px;}
+
+.modal-body{background-color: #fff; padding: 50px 0; border-radius: 20px;
+        color: #000; text-align: left;}
+
+.modal-body .m-content{color: #242424; font-size: 18px; padding-bottom: 20px;}
+
+.modal-body h2{padding-bottom: 20px; align-items: center;}
+
+.modal-body .con>strong{font-size: 20px;}
+
+.modal-body .con{font-size: 18px; padding-bottom: 20px; line-height: 160%;}
+
+.modal-body .con2>strong{font-size: 20px;}
+
+.modal-body .con2>span{padding-left: 10px;}
+
+.modal-body .con2{font-size: 18px; padding-bottom: 30px; line-height: 160%;}
+
+.modal-body .a1{display: block; font-size: 30px; text-align: center; padding-bottom: 30px;}
+
+.modal-body .a2{display: block; font-size: 30px; text-align: center; padding-bottom: 10px;}
+
+.modal-close{position: absolute; right: 20px; top: 20px; display: block;
+        width: 50px; font-size: 30px; border: 0; color: #020417; cursor: pointer;}
+
+.sub2, .sub3{text-align: center; padding-top: 10px; padding-bottom: 30px;}

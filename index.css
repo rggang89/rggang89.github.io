@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+
+
+/* cover 구역 */
+section.cover{min-height: 100vh; justify-content: center; align-items: center; text-align: center;}
+
+
+
+/* about me 구역 */
+section.about{margin-bottom: 200px;}
+
+section.about .container{align-items: center;}
+
+section.about .container ul{width: 30%;}
+
+section.about .container li{text-align: right; padding-bottom: 20px;}
+
+section.about .container li:nth-child(5){padding-bottom: 0;}
+
+section.about .about-p{text-align: left; width: 60%; margin-left: 50px;}
+
+.about-li {opacity: 0; transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;}
+
+.about-li.visible {opacity: 1; transform: translateY(0);}
+
+
+
+/* works 구역 */
+section.promotion .flex-box,
+section.ui .flex-box
+{gap: 30px;}
+
+section.promotion .flex-box .frame-box,
+section.ui .flex-box .frame-box
+{width: calc((100% - 60px) / 3); cursor: pointer;}
+
+section.promotion .frame-box,
+section.ui .frame-box
+{background-color: #fff;box-shadow: 0 0 20px 0 rgba(17, 45, 78, 0.1);}
+
+section.promotion .frame-box .modal-open,
+section.ui .frame-box .modal-open
+{padding: 20px; text-align: center;}
+
+section.promotion .frame-box .modal-open .content,
+section.ui .frame-box .modal-open .content
+{font-size: 18px; display: inline-block; 
+    padding-top: 20px; padding-bottom: 5px; border-bottom: solid 1px #112D4E;}
+
+section.promotion .frame-box .modal-open .product span,
+section.ui .frame-box .modal-open .product span
+{font-size: 30px; font-weight: bold;
+    display: inline-block; padding-top: 20px;}
+
+section.promotion .frame-box .modal-open .product,
+section.ui .frame-box .modal-open .product
+{font-size: 22px;}
+
+/* 호버시 확대 */
+section.promotion .flex-box .frame-box,
+section.ui .flex-box .frame-box
+{overflow: hidden; cursor: pointer; transition: all 0.3S;}
+
+section.promotion .flex-box .frame-box:hover,
+section.ui .flex-box .frame-box:hover
+{transform: scale(1.05);}
+
+
+/* promotion 구역 */
+section.promotion{margin-bottom: 150px;}
+
+
+
+
+/* ui 구역 */
+section.ui{margin-bottom: 50px;}
+
+
+
+/* 감보기 인터렉션 구역 */
+.video-box{position: absolute; width: 290px;  background-color: #fff; height: 591px;
+    border-radius: 44px; overflow: hidden; z-index: 1000; top: 310px; left: 200px;
+    box-shadow: 0 0 10px gray; display: none;}
+video{margin-top: -5px; margin-left: -6px;}
+
+#bt{display: block; width: fit-content;margin: auto;
+    background-color: #C1121F; color: #fff; padding: 10px 10px 10px 11px; text-align: center;
+    align-items: center;
+    font-size: 20px; cursor: pointer; border-radius: 50%;
+    }
+#bt:hover{background-color: #fff; color: #C1121F;}
+
+.bt{display: block;}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:992px){
+
+/* header 구역 */
+header .container ul li{display: inline-block; padding: 10px 30px;}
+
+
+
+header .container ul li a.active {background-color: #3F72AF; color: #FFF;
+        border-radius: 50px;}
+
+
+
+
+/* promotion 구역 */
+section.promotion .flex-box,
+section.ui .flex-box 
+{gap: 20px;}
+
+section.promotion .flex-box .frame-box,
+section.ui .flex-box .frame-box
+{width: calc((100% - 20px) / 2);}
+
+}
+
+
+
+
+
+@media(max-width:767px){
+
+/* 폰트 설정 */
+a{font-size: 16px;}
+
+.about-li{font-size: 24px; letter-spacing: 5%;}
+
+.about-p{font-size: 18px;}
+
+/* header 구역 */
+header .container ul li{display: inline-block; padding: 10px 0;}
+header .container ul li a{padding: 5px 15px;}
+
+
+
+/* about 구역 */
+section.about .container ul{width: 20%;}
+section.about .about-p{width: 70%; margin-left: 30px;}
+
+
+
+/* promotion 구역 */
+section.promotion .flex-box .frame-box .content,
+section.ui .flex-box .frame-box .content
+{font-size: 16px;}
+
+section.promotion .flex-box .frame-box .product>span,
+section.ui .flex-box .frame-box .product>span
+{font-size: 26px}
+
+section.promotion .flex-box .frame-box .product,
+section.ui .flex-box .frame-box .product
+{font-size: 20px;}
+
+section.promotion .flex-box,
+section.ui .flex-box
+{gap: 20px;}
+
+section.promotion .flex-box .frame-box,
+section.ui .flex-box .frame-box
+{width: 100%;}
+
+
+
+
+/* 모달창 조절 */
+.modal-wrap{left: 5%; width:90%;}
+
+
+
+/* 모달창 텍스트 조절 */
+.modal-body .m-content{font-size: 14px;}
+.modal-body h2>span{display: block;}
+.modal-body .con>strong{font-size: 18px;}
+.modal-body .con{font-size: 16px;}
+.modal-body .con2>strong{font-size: 18px;}
+.modal-body .con2{font-size: 16px;}
+}
