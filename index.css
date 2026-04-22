@@ -28,49 +28,63 @@ section.about .about-p{text-align: left; width: 60%; margin-left: 50px;}
 
 
 /* works 구역 */
+section.ai .flex-box,
 section.promotion .flex-box,
 section.ui .flex-box
 {gap: 30px;}
 
+section.ai .flex-box .frame-box,
 section.promotion .flex-box .frame-box,
 section.ui .flex-box .frame-box
 {width: calc((100% - 60px) / 3); cursor: pointer;}
 
+section.ai .frame-box,
 section.promotion .frame-box,
 section.ui .frame-box
 {background-color: #fff;box-shadow: 0 0 20px 0 rgba(17, 45, 78, 0.1);}
 
+section.ai .frame-box .modal-open,
 section.promotion .frame-box .modal-open,
 section.ui .frame-box .modal-open
 {padding: 20px; text-align: center;}
 
+section.ai .frame-box .modal-open .content,
 section.promotion .frame-box .modal-open .content,
 section.ui .frame-box .modal-open .content
 {font-size: 18px; display: inline-block; 
     padding-top: 20px; padding-bottom: 5px; border-bottom: solid 1px #112D4E;}
 
+section.ai .frame-box .modal-open .product span,
 section.promotion .frame-box .modal-open .product span,
 section.ui .frame-box .modal-open .product span
 {font-size: 30px; font-weight: bold;
     display: inline-block; padding-top: 20px;}
 
+section.ai .frame-box .modal-open .product,
 section.promotion .frame-box .modal-open .product,
 section.ui .frame-box .modal-open .product
 {font-size: 22px;}
 
 /* 호버시 확대 */
+section.ai .flex-box .frame-box,
 section.promotion .flex-box .frame-box,
 section.ui .flex-box .frame-box
 {overflow: hidden; cursor: pointer; transition: all 0.3S;}
 
+section.ai .flex-box .frame-box:hover,
 section.promotion .flex-box .frame-box:hover,
 section.ui .flex-box .frame-box:hover
 {transform: scale(1.05);}
 
 
+
+/* ai branding 구역 */
+section.ai{margin-bottom: 150px;}
+
+
+
 /* promotion 구역 */
 section.promotion{margin-bottom: 150px;}
-
 
 
 
