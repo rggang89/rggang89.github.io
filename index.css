@@ -131,10 +131,12 @@ header .container ul li a.active {background-color: #3F72AF; color: #FFF;
 
 
 /* promotion 구역 */
+section.ai .flex-box,
 section.promotion .flex-box,
 section.ui .flex-box 
 {gap: 20px;}
 
+section.ai .flex-box .frame-box,
 section.promotion .flex-box .frame-box,
 section.ui .flex-box .frame-box
 {width: calc((100% - 20px) / 2);}
@@ -162,27 +164,32 @@ header .container ul li a{padding: 5px 15px;}
 
 /* about 구역 */
 section.about .container ul{width: 20%;}
-section.about .about-p{width: 70%; margin-left: 30px;}
+section.about .about-p{width: 70%; margin-left: 30px; font-size: 14px;}
 
 
 
 /* promotion 구역 */
+section.ai .flex-box .frame-box .content,
 section.promotion .flex-box .frame-box .content,
 section.ui .flex-box .frame-box .content
 {font-size: 16px;}
 
+section.ai .flex-box .frame-box .product>span,
 section.promotion .flex-box .frame-box .product>span,
 section.ui .flex-box .frame-box .product>span
 {font-size: 26px}
 
+section.ai .flex-box .frame-box .product,
 section.promotion .flex-box .frame-box .product,
 section.ui .flex-box .frame-box .product
 {font-size: 20px;}
 
+section.ai .flex-box,
 section.promotion .flex-box,
 section.ui .flex-box
 {gap: 20px;}
 
+section.ai .flex-box .frame-box,
 section.promotion .flex-box .frame-box,
 section.ui .flex-box .frame-box
 {width: 100%;}
