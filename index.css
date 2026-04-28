@@ -156,6 +156,8 @@ a{font-size: 16px;}
 
 .about-p{font-size: 18px;}
 
+main h4{font-size: 14px;}
+
 /* header 구역 */
 header .container ul li{display: inline-block; padding: 10px 0;}
 header .container ul li a{padding: 5px 15px;}
@@ -164,6 +166,7 @@ header .container ul li a{padding: 5px 15px;}
 
 /* about 구역 */
 section.about .container ul{width: 20%;}
+section.about .container li{text-align: left; font-size: 16px;}
 section.about .about-p{width: 70%; margin-left: 30px; font-size: 14px;}
 
 
