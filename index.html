@@ -10,54 +10,32 @@
 <link rel="stylesheet" href="index.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Gothic+A1&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>조유진 포트폴리오</title>
 <style>
-
-
 </style>
-
 <body>
-
-
-
+<!-- header 구역 -->
+<header>
+    <nav class="container">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#works">Works</a></li>
+        </ul>
+    </nav>
+</header>
 
 
 <main>
     <!-- cover 구역 -->
-    <section class="container cover" id="cover">
-        <div class="">
-            <h2>FORWARD <span>BY DESIGN</span></h2>
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/app design.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/langswap.png" alt=""></div>
-                <div class="swiper-slide"><img src="img/pawmate.png" alt=""></div>
-            </div>
+    <section class="flex-box cover" id="home">
+        <div class="container cover-content">
+            <h2>FORWARD BY DESIGN</h2>
+            <p class="cover-p">목적을 향해 나아가는 디자인</p>
         </div>
-            <h3>UX / UI | WEB DESIGNER</h3>
-            <p class="txt1">
-                Designing intuitive digital experiences <span>through user-centered thinking</span>
-            </p>
-        </div>
-
-            <!-- header -->
-        <header>
-            <div id="header">
-                <nav class="container flex-box">
-                    <a href="#" class="logo">Yoojin Cho</a>
-                    <ul class="menu">
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Promotion</a></li>
-                        <li><a href="#">UX / UI</a></li>
-                    </ul>    
-                </nav>
-            </div>
-        </header>
     </section>
-
 
 
     <!-- about me 구역 -->
@@ -88,51 +66,561 @@
         </div>
     </section>
 
+    <!-- ai -->
+    <!-- <section class="container ai" id="works">
+    <h4>모든 작업물은 <span>개인작업 100%로 제작되었습니다.</span></h4>
+    <h3 class="works-h3">AI Branding</h3>
+    <div class="flex-box">
+        <div class="frame-box">
+            <div class="modal-open" onclick="open_modal(10)">
+                <img src="images/solariff.png" alt="solariff">
+                <p class="content">브랜딩 01.</p>
+                <p class="product"><span>선케어 전문 코스메틱</span><br>Solariff</p>
+            </div>
+        </div>
+        <div class="frame-box">
+            <div class="modal-open" onclick="open_modal(11)">
+                <img src="images/dalion.png" alt="dalion">
+                <p class="content">브랜딩 02.</p>
+                <p class="product"><span>K-POP 아이돌</span><br>Dalion</p>
+            </div>
+        </div>
+    </div>
+    </section> -->
 
+    <!-- promotion -->
+    <section class="container promotion" id="works">
+        <h4>모든 작업물은 <span>개인작업 100%로 제작되었습니다.</span></h4>
+        <h3 class="works-h3">Promotion</h3>
+        <div class="flex-box">
+            <div class="frame-box">
+                <div class="modal-open" onclick="open_modal(0)">
+                    <img src="images/skinfood.png" alt="skinfood">
+                    <p class="content">상세페이지 01.</p>
+                    <p class="product"><span>스킨푸드</span><br>토마토선크림</p>
+                </div>
+            </div>
+            <div class="frame-box">
+                <div class="modal-open" onclick="open_modal(1)">
+                    <img src="images/yuzu.png" alt="skinfood">
+                    <p class="content">상세페이지 02.</p>
+                    <p class="product"><span>어떤하루 By 녹동양조</span><br>고흥 유자 막걸리</p>
+                </div>
+            </div>
+            <div class="frame-box">
+                <div class="modal-open" onclick="open_modal(2)">
+                    <img src="images/oval plate.png" alt="skinfood">
+                    <p class="content">상세페이지 03.</p>
+                    <p class="product"><span>세임디</span><br>마레 오벌 플레이트</p>
+                </div>
+            </div>
+            <div class="frame-box">
+                <div class="modal-open" onclick="open_modal(9)">
+                    <img src="images/jammy pop.png" alt="jammy pop">
+                    <p class="content">AI 브랜딩 & 프로모션 01.</p>
+                    <p class="product"><span>재미팝</span><br>시즌 한정 체리잼</p>
+                </div>
+            </div>
+            <div class="frame-box">
+                <div class="modal-open" onclick="open_modal(6)">
+                    <img src="images/seabyeokcho.png" alt="shilla">
+                    <p class="content">AI 브랜딩 & 프로모션 02.</p>
+                    <p class="product"><span>새벽초</span><br>여백 크림</p>
+                </div>
+            </div>
+            <div class="frame-box">
+                <div class="modal-open" onclick="open_modal(7)">
+                    <img src="images/lotte giants.png" alt="skinfood">
+                    <p class="content">배너 & 이벤트 페이지 02.</p>
+                    <p class="product"><span>롯데마트 X 롯데자이언츠</span><br>한국시리즈 우승 이벤트</p>
+                </div>
+            </div>
+            <div class="frame-box">
+                <div class="modal-open" onclick="open_modal(8)">
+                    <img src="images/nmart.png" alt="skinfood">
+                    <p class="content">배너 이미지 02.</p>
+                    <p class="product"><span>모바일 배너</span><br>네이버 홈</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ui -->
+    <section class="container ui" id="works">
+        <h3 class="works-h3">UX/UI Design</h3>
+        <div class="flex-box">
+            <div class="frame-box">
+                <div class="modal-open" onclick="open_modal(5)">
+                    <img src="images/app design.png" alt="skinfood">
+                    <p class="content">앱 디자인 01.</p>
+                    <p class="product"><span>감정 기록 앱</span><br>감보기</p>
+                </div>
+            </div>
+            <div class="frame-box">
+                <div class="modal-open" onclick="open_modal(3)">
+                    <img src="images/langswap.png" alt="skinfood">
+                    <p class="content">반응형 웹페이지 01.</p>
+                    <p class="product"><span>글로벌 언어교환 서비스</span><br>LangSwap</p>
+                </div>
+            </div>
+            <div class="frame-box">
+                <div class="modal-open" onclick="open_modal(4)">
+                    <img src="images/pawmate.png" alt="skinfood">
+                    <p class="content">반응형 웹페이지 02.</p>
+                    <p class="product"><span>반려동물 돌봄 중개 서비스</span><br>PawMate</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-    
+
+
+
+<!-- 모달0 구역(토마토 선크림) -->
+<div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-860">
+                <p class="m-content">상세페이지</p>
+                <h2>스킨푸드 <span>토마토 선크림</span></h2>
+                <p class="con">
+                    <strong>CONCEPT</strong><br>
+                    - 기존 상세페이지를 분석하여 브랜드 특성과 제품 강점을 효과적으로 전달할 수 있도록 리디자인하였습니다.<br>
+                    - 음식 원료를 기반으로 하는 브랜드 아이덴티티를 반영하여, 주요 성분인 토마토를 중심으로 비주얼을 재구성하였습니다.<br>
+                    - 제품의 원료와 효능이 직관적으로 전달될 수 있도록 이미지와 콘텐츠 구성을 개선하였습니다. <br>
+                    - 토마토의 레드 계열 컬러를 메인으로 설정하여 제품 아이덴티티를 강조하였습니다. <br>
+                    - 포인트 컬러의 채도를 높여 시각적 주목도를 강화하고 핵심 정보가 돋보이도록 구성하였습니다. <br>
+                </p>
+                <p class="con2">
+                    <strong>SKILL</strong><br>
+                    - 생성형 AI (Chat GPT, Gemini, Adobe Firefly) 활용<br>
+                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트를 생성하였습니다.<br></span>
+                    <span>· Gemini : 제품 구도, 빛, 그림자등 전체적인 구조 편집하였습니다.<br></span>
+                    <span>· Adobe Firefly : 제미나이로 생성된 이미지의 색감, 사이즈 조절에 활용하였습니다.</span>
+                </p>
+                <a href="images/tomato og.jpg" class="a1" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <img src="img/promotion/cos/1.png" alt="">
+                <img src="img/promotion/cos/2.png" alt="">
+                <img src="img/promotion/cos/3.png" alt="">
+                <img src="img/promotion/cos/4.jpg" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<!-- 모달1 구역(고흥 유자 막걸리) -->
+<div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-860">
+                <p class="m-content">상세페이지</p>
+                <h2>어떤하루 By 녹동양조 <span>고흥 유자 막걸리</span></h2>
+                <p class="con">
+                    <strong>CONCEPT</strong><br>
+                    - 기존 상세페이지를 분석하여 정보 전달력과 시각적 완성도를 높이기 위해 리디자인하였습니다.<br>
+                    - 텍스트 위주로 구성되어 있던 상품 설명을 이미지 중심으로 재구성하여, 제품의 특성을 직관적으로 인지할 수 있도록 시각화하였습니다.<br>
+                    - 유자의 상큼함과 따뜻한 이미지를 표현하기 위해 전체적으로 밝고 화사한 톤으로 재정비하였습니다.<br>
+                    - 제품의 아이덴티티를 강조하기 위해 유자의 옐로우 계열을 중심으로 색감을 구성하였습니다. <br>
+                </p>
+                <p class="con2">
+                    <strong>SKILL</strong><br>
+                    - 생성형 AI (Chat GPT, Gemini) 활용<br>
+                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트를 생성하였습니다.<br></span>
+                    <span>· Gemini : 유자를 강조하는 제품컷을 생성하였습니다.</span>
+                </p>
+                <a href="images/yuzy-og.png" class="a1" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <img src="img/promotion/food/yuzu/1.png" alt="">
+                <img src="img/promotion/food/yuzu/2.png" alt="">
+                <img src="img/promotion/food/yuzu/3.jpg" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<!-- 모달2 구역(마레 오벌 플레이트) -->
+<div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-860">
+                <p class="m-content">상세페이지</p>
+                <h2>세임디 <span>마레 오벌 플레이트</span></h2>
+                <p class="con">
+                    <strong>CONCEPT</strong><br>
+                    - 기존 상세페이지를 분석하여 제품 중심의 정보 전달이 강화될 수 있도록 리디자인하였습니다.<br>
+                    - 모델 중심으로 구성되어 있던 기존 이미지를 제품 중심의 비주얼로 재구성하여, 형태와 디테일을 보다 명확하게 확인할 수 있도록 개선하였습니다.<br>
+                    - 로고와 제품의 메인 컬러인 블루 계열을 유지·확장하여 브랜드 아이덴티티를 강화하였습니다.<br>
+                    - 전체적으로 절제된 컬러 사용을 통해 깔끔한 분위기를 형성하고, 디자인의 통일감을 높였습니다. <br>
+                </p>
+                <p class="con2">
+                    <strong>SKILL</strong><br>
+                    - 생성형 AI (Chat GPT, Gemin, Adobe Firefly) 활용<br>
+                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트를 생성하였습니다.<br></span>
+                    <span>· Gemini : 제품이 돋보일 수 있도록 음식이 담긴 이미지를 생성하였습니다.<br></span>
+                    <span>· Adobe Firefly : 제미나이로 생성된 이미지의 색감, 사이즈 조절에 활용하였습니다.</span>
+                </p>
+                <a href="images/samed-og.png" class="a1" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <img src="img/promotion/general/oval/1.jpg" alt="">
+                <img src="img/promotion/general/oval/2.jpg" alt="">
+                <img src="img/promotion/general/oval/3.jpg" alt="">
+                <img src="img/promotion/general/oval/4.jpg" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<!-- 모달3 구역(langswap) -->
+<div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-1400">
+                <p class="m-content">반응형 웹페이지</p>
+                <h2>글로벌 언어 교환 서비스 <span>LangSwap</span></h2>
+                <a href="port2/index.html" class="a2" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <p class="sub3">제작 페이지 : 로고 클릭 및 점멸 아이콘으로 표시하였습니다</p>
+                <img src="port2/images/web1-1.png" alt="">
+                <img src="port2/images/web1-2.png" alt="">
+                <img src="port2/images/web1-3.png" alt="">
+                <img src="port2/images/web1-4.png" alt="">
+                <img src="port2/images/web1-5.png" alt="">
+                <img src="port2/images/web1-6.png" alt="">
+                <img src="port2/images/web1-7.png" alt="">
+                <img src="port2/images/web1-8.png" alt="">
+                <img src="port2/images/web1-9.png" alt="">
+                <img src="port2/images/web1-10.png" alt="">
+                <img src="port2/images/web1-11.png" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<!-- 모달4 구역(PawMate) -->
+<div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-1400">
+                <p class="m-content">반응형 웹페이지</p>
+                <h2>반려동물 돌봄 중개 서비스 <span>PawMate</span></h2>
+                <a href="port1/index.html" class="a2" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <p class="sub3">제작 페이지 : 로고 클릭 및 점멸 아이콘으로 표시하였습니다</p>
+                <img src="port1/images/web2-1.png" alt="">
+                <img src="port1/images/web2-2.png" alt="">
+                <img src="port1/images/web2-3.png" alt="">
+                <img src="port1/images/web2-4.png" alt="">
+                <img src="port1/images/web2-5.png" alt="">
+                <img src="port1/images/web2-6.png" alt="">
+                <img src="port1/images/web2-7.png" alt="">
+                <img src="port1/images/web2-8.png" alt="">
+                <img src="port1/images/web2-9.png" alt="">
+                <img src="port1/images/web2-10.png" alt="">
+                <img src="port1/images/web2-11.png" alt="">
+                <img src="port1/images/web2-12.png" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<!-- 모달5 구역(감보기 앱) -->
+<div class="modal">
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-1400">
+                <p class="m-content">앱 디자인</p>
+                <h2>감정 기록 앱 <span>감보기</span></h2>
+                <span id="bt"><i class="fa-solid fa-play"></i></span>
+                <p class="sub2">Interaction View</p>
+                <img src="img/ui design/app design1.png" alt="">
+                <img src="img/ui design/app design2.png" alt="">
+                <img src="img/ui design/app design3.png" alt="">
+                <img src="img/ui design/app design4.png" alt="">
+                <img src="img/ui design/app design5.png" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+    <div class="video-box">
+        <video width="300" autoplay loop muted>
+            <source src="app video.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<!-- 모달6 구역(새벽초) -->
+<div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-1400">
+                <p class="m-content">AI 브랜딩</p>
+                <h2>프로모션<span> 가상브랜드 새벽초</span></h2>
+                <a href="https://www.instagram.com/reel/DbABcXav2lm/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="a2" target="_blank"><i class="fa-solid fa-link"></i></a>
+                <p class="sub3">브랜드에 대한 인스타그램 릴스를 제작하였습니다</p>
+                <img src="img/promotion/cos/seabyeokcho1.png" alt="">
+                <img src="img/promotion/cos/seabyeokcho2.png" alt="">
+                <img src="img/promotion/cos/seabyeokcho3.png" alt="">
+                <img src="img/promotion/cos/seabyeokcho4.png" alt="">
+                <img src="img/promotion/cos/seabyeokcho5.png" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<!-- 모달7 구역(롯데마트 x 롯데자이언츠) -->
+<div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-860">
+                <p class="m-content">배너 & 이벤트 페이지</p>
+                <h2>롯데마트 x 롯데자이언츠 <span>한국시리즈 우승 이벤트</span></h2>
+                <p class="con">
+                    <strong>CONCEPT</strong><br>
+                    - 2026 한국시리즈 우승이라는 팬덤의 감정적 순간을 롯데마트 프로모션 경험으로 연결한 스포츠 셀러브레이션형 프로모션 페이지입니다. <br>
+                    - 우승, 축제, 팬덤, 리워드라는 키워드를 중심으로 디자인하였으며, 단순 할인 행사가 아니라 롯데자이언츠의 우승을 함께 축하하고 팬들이 직접 참여할 수 있는 구조로 기획했습니다.<br>
+                    - 우승 직후 팬들의 높은 관심과 축하 분위기를 롯데마트 장보기 혜택으로 자연스럽게 연결하고,쿠폰팩과 영수증 응모 이벤트를 통해 구매 전환과 매장 방문을 유도하고자 했습니다.<br>
+                    - “우승의 기쁨을 롯데마트와 함께” 라는 메시지를 중심으로, 단순히 이벤트를 확인하는 것이 아닌 우승의 순간을 함께 즐기고 있다는 인상을 주는 데 집중했습니다.
+                </p>
+                <p class="con2">
+                    <strong>SKILL</strong><br>
+                    - 생성형 AI (Chat GPT) 활용<br>
+                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃을 설계하고, 우승 엠블럼을 제작하였습니다.<br></span>
+                </p>
+                <img src="img/promotion/general/lotte giants.png" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<!-- 모달8 구역(모바일 배너 이미지(다이슨, 컬리 N 마트) -->
+<div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-860">
+                <p class="m-content">배너</p>
+                <h2>모바일 배너 <span>네이버 홈</span></h2>
+                <p class="con">
+                    <strong>CONCEPT</strong><br>
+                    - 모바일 환경의 특성을 고려하여, 짧은 시간 내 정보를 직관적으로 확인할 수 있도록 간결하게 디자인하였습니다. <br>
+                    - 모바일 환경에 최적화된 가독성을 위해 핵심 정보를 강조하여 디자인하였습니다. <br>
+                    - 상품 및 서비스 특성에 맞는 컬러와 톤을 적용하여 콘텐츠의 성격을 직관적으로 전달하였습니다. <br>
+                </p>
+                <p class="con2">
+                    <strong>SKILL</strong><br>
+                    - 생성형 AI (Chat GPT, Gemini) 활용<br>
+                    <span>· Chat GPT : 디자인 컨셉 설정과 레이아웃 설계, 이미지 생성에 필요한 프롬프트를 생성하였습니다.<br></span>
+                    <span>· Gemini : 컬리 N 마트 배너의 3D 이미지 생성하였습니다.<br></span>
+                </p>
+                <img src="img/promotion/general/n mart/nmart.png" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<!-- 모달9 구역(재미팝) -->
+<div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-1400">
+                <p class="m-content">AI 브랜딩</p>
+                <h2>프로모션<span> 가상브랜드 재미팝</span></h2>
+                <img src="img/promotion/food/jammypop1.png" alt="">
+                <img src="img/promotion/food/jammypop2.png" alt="">
+                <img src="img/promotion/food/jammypop3.png" alt="">
+                <img src="img/promotion/food/jammypop4.png" alt="">
+                <img src="img/promotion/food/jammypop5.png" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div>
+
+
+
+<!-- 모달10 구역(solariff) -->
+<!-- <div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-1400">
+                <p class="m-content">AI 브랜딩</p>
+                <h2>선케어 전문 코스메틱 브랜드 <span>Solariff</span></h2>
+                <img src="img/promotion/cos/solariff1.png" alt="">
+                <img src="img/promotion/cos/solariff2.jpg" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div> -->
+
+<!-- 모달12 구역(dalion) -->
+<!-- <div class="modal" >
+    <div class="modal-wrap">
+        <div class="modal-body">
+            <div class="container-1400">
+                <p class="m-content">AI 브랜딩</p>
+                <h2>K-POP 아이돌 <span>Dalion</span></h2>
+                <img src="img/promotion/general/dalion1.jpg" alt="">
+                <img src="img/promotion/general/dalion2.jpg" alt="">
+                <span class="modal-close"><i class="fa-regular fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </div>   
+</div> -->
+
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+<script>
 
-<!-- Initialize Swiper -->
-    <script>
-    var swiper = new Swiper('.mySwiper', {
-        loop: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-        delay: 1300,
-        disableOnInteraction: false,
-        },
-        pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+let modal = document.querySelectorAll('.modal');
+
+    function open_modal(modal_num) {
+        $('body').css('overflow', 'hidden');
+        $(modal[modal_num]).show(); // 해당 모달 열기
+    }
+
+    $(document).ready(function() {
+        
+        // 1. 닫기 버튼 클릭 시 닫기
+        $('.modal-close').click(function() {
+            close_all_modals();
+        });
+
+        // 2. 모달 배경(검은 영역) 클릭 시 닫기
+        $('.modal').click(function(e) {
+            // 클릭한 대상(e.target)이 흰색 박스(.modal-wrap)가 아닌 
+            // 배경(.modal) 그 자체일 때만 닫기
+            if ($(e.target).is('.modal')) {
+                close_all_modals();
+            }
+        });
+
+        // 공통으로 사용할 닫기 함수
+        function close_all_modals() {
+            $('body').css('overflow', 'auto');
+            $('.modal').scrollTop(0);
+            $('.modal').hide();
         }
     });
 
-    const header = document.querySelector("#header");
 
-window.addEventListener("scroll",()=>{
+    
+    // 앱 디자인 인터렉션
+    $('#bt').click(function(){
+        $('.video-box').toggleClass('bt');
+    });
 
-    if(window.scrollY > window.innerHeight){
 
-        header.classList.add("active");
 
-    }else{
+    $(document).ready(function () {
+    const $navLinks = $('nav a');
+    const headerHeight = $('header').outerHeight();
+    let isAnimating = false; // 애니메이션 플래그 추가
 
-        header.classList.remove("active");
+    // 활성화 함수
+    function setActive($el) {
+        $navLinks.removeClass('active');
+        $el.addClass('active');
+    }
 
+    // 초기값: 현재 스크롤 위치 기반으로 활성화
+    function initActive() {
+    const scrollTop = $(window).scrollTop();
+    let currentSection = $navLinks.first();
+
+    $('section[id]').each(function () {
+        const sectionTop = $(this).offset().top - headerHeight - 200;
+        const sectionId = $(this).attr('id');
+
+        if (scrollTop >= sectionTop) {
+            const $matched = $navLinks.filter(`[href="#${sectionId}"]`);
+            if ($matched.length) currentSection = $matched;
+        }
+    });
+
+    setActive(currentSection);
+}
+
+initActive();
+
+    // 클릭 시 해당 섹션으로 이동
+    $navLinks.on('click', function (e) {
+        e.preventDefault();
+        const target = $(this).attr('href');
+        setActive($(this));
+
+        if(target === '#aboutme') {
+            setTimeout(triggerAboutAnimation, 400); // 스크롤 후 실행
+        }
+
+        isAnimating = true; // 애니메이션 시작
+        
+        $('html, body').animate({
+            scrollTop: $(target).offset().top - headerHeight - 100
+        }, 500,
+        function () {
+            isAnimating = false; // 애니메이션 완료 후 해제
+        });
+    });
+
+    // 스크롤 시 현재 섹션 감지
+    $(window).on('scroll', function () {
+        if (isAnimating) return; // 애니메이션 중이면 스크롤 감지 무시
+
+        const scrollTop = $(this).scrollTop();
+        const prevScrollTop = $(this).data('prevScrollTop') || 0;
+        const isScrollingDown = scrollTop > prevScrollTop; // 스크롤 방향 감지
+
+        $(this).data('prevScrollTop', scrollTop);
+
+        const offset = isScrollingDown ? 200 : 500; // 내려갈 때 200, 올라갈 때 50
+
+        $('section').each(function () {
+            const sectionTop = $(this).offset().top - headerHeight - offset; // 여유값
+            const sectionId = $(this).attr('id');
+
+            if (scrollTop >= sectionTop) {
+                const $matched = $navLinks.filter(`[href="#${sectionId}"]`);
+                setActive($matched);
+
+            if (sectionId === 'aboutme') { // 스크롤로 진입 시 애니메이션
+            triggerAboutAnimation();
+            }    
+            }
+        });
+    });
+
+
+
+    // about li 순차 애니메이션
+    function animateAboutLi() {
+    $('.about-li').each(function (index) {
+        const $li = $(this);
+        setTimeout(function () {
+            $li.addClass('visible');
+        }, index * 200); // 200ms 간격으로 순차 등장
+    });
+    }
+
+    // 이미 실행됐는지 체크하는 플래그
+    let aboutAnimated = false;
+
+    function triggerAboutAnimation() {
+    if (!aboutAnimated) {
+        aboutAnimated = true;
+        animateAboutLi();
+    }
     }
 
 });
-
-    </script>
 
 </script>
 </body>
